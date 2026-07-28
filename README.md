@@ -2,7 +2,7 @@
 
 Portfolio personnel présentant mon parcours, mes projets académiques et mes compétences en ingénierie logicielle et intelligence artificielle.
 
-🔗 **Site en ligne :** https://cv-portfolio-meryam.vercel.app
+🔗 **Site en ligne :** https://cv-portfolio-alpha-seven.vercel.app/
 
 ## Contenu
 - Profil & compétences (Web/Mobile/Backend, Data & BI, Deep Learning, NLP/GenAI, Sécurité)
