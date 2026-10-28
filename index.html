@@ -1208,16 +1208,16 @@
             <div class="proj-card-header">
               <div class="proj-meta-row">
                 <div class="proj-badges-group">
-                  <span class="proj-role-badge">Projet · Architecture Sécurisée</span>
-                  <span class="proj-cat-badge">Backend &amp; API REST Sécurisée</span>
+                  <span class="proj-role-badge">Projet · Architecture Backend</span>
+                  <span class="proj-cat-badge">Backend Python &amp; API REST</span>
                 </div>
                 <span class="proj-period">Nov 2025 — Jan 2026</span>
               </div>
-              <h3 class="proj-title">TrustVault — Application Bancaire Sécurisée</h3>
+              <h3 class="proj-title">TrustVault — API Bancaire Sécurisée</h3>
             </div>
 
             <p class="proj-pitch">
-              Plateforme bancaire simulant des transactions financières réelles (dépôts, retraits, virements) avec gestion rigoureuse des transactions, authentification JWT et validation stricte des requêtes.
+              API REST pour une application bancaire simulée (gestion des comptes, dépôts, retraits, virements inter-comptes) développée avec FastAPI et PostgreSQL, intégrant l'authentification JWT, le hachage des mots de passe sous bcrypt et la validation des données.
             </p>
 
             <!-- Visuel Signature TrustVault : Schéma de flux sécurisé -->
@@ -1235,7 +1235,7 @@
                 <span class="react-arrow">➔</span>
                 <div class="tv-step-node secure">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Validation API</span>
+                  <span>Validation Requête</span>
                 </div>
                 <span class="react-arrow">➔</span>
                 <div class="tv-step-node secure">
@@ -1259,7 +1259,7 @@
                       Problématique
                     </div>
                     <p>
-                      Concevoir un système bancaire d'intégrité critique éliminant tout risque d'incohérence de solde lors des transactions concurrentes (conditions de course, double dépense) avec une approche Zero-Trust.
+                      Concevoir une API backend structurée et sécurisée pour simuler des opérations bancaires fondamentales (dépôts, retraits, virements), en veillant à la cohérence des soldes lors des transactions et au contrôle des accès utilisateurs.
                     </p>
                   </div>
 
@@ -1269,9 +1269,9 @@
                       Approche Technique
                     </div>
                     <ul>
-                      <li>Architecture multicouche FastAPI : séparation stricte entre contrôleurs, services métier et accès aux données.</li>
-                      <li>Transactions atomiques sous PostgreSQL (BEGIN / COMMIT / ROLLBACK) assurant l'intégrité financière.</li>
-                      <li>Validation stricte des requêtes entrantes, authentification JWT et hashage Bcrypt des mots de passe.</li>
+                      <li>Architecture modulaire FastAPI : découplage entre les routeurs d'API, les services métier et la persistance des données.</li>
+                      <li>Gestion rigoureuse des virements inter-comptes au moyen de transactions SQL pour maintenir la cohérence des soldes.</li>
+                      <li>Authentification par jetons JWT, hachage sécurisé des mots de passe avec bcrypt et validation des formats de requêtes entrantes.</li>
                     </ul>
                   </div>
 
@@ -1287,7 +1287,7 @@
                       <span class="tag">API REST</span>
                       <span class="tag">JWT Tokens</span>
                       <span class="tag">Bcrypt</span>
-                      <span class="tag">Transactions Sécurisées</span>
+                      <span class="tag">Transactions SQL</span>
                     </div>
                   </div>
                 </div>
@@ -1298,8 +1298,8 @@
                     <div class="stepper-track"><div class="stepper-bar" style="width: 0%;"></div></div>
                     <div class="stepper-pills" role="tablist" aria-label="Étapes de conception TrustVault">
                       <button class="step-pill active" onclick="goToStep(this, 0)" role="tab" aria-selected="true"><span class="step-num">STEP 01</span> Multicouche</button>
-                      <button class="step-pill" onclick="goToStep(this, 1)" role="tab" aria-selected="false"><span class="step-num">STEP 02</span> Transactions Sécurisées</button>
-                      <button class="step-pill" onclick="goToStep(this, 2)" role="tab" aria-selected="false"><span class="step-num">STEP 03</span> Sécurité Zero-Trust</button>
+                      <button class="step-pill" onclick="goToStep(this, 1)" role="tab" aria-selected="false"><span class="step-num">STEP 02</span> Transactions SQL</button>
+                      <button class="step-pill" onclick="goToStep(this, 2)" role="tab" aria-selected="false"><span class="step-num">STEP 03</span> Authentification &amp; Sécurité</button>
                     </div>
                   </div>
 
@@ -1307,42 +1307,42 @@
                     <div class="step-slide active" data-step="0">
                       <div class="step-slide-header">
                         <span class="step-tag-pill">Étape 01 · Architecture en Couches FastAPI</span>
-                        <div class="step-mini-tags"><span class="mini-tag">Clean Arch</span><span class="mini-tag">Routers</span></div>
+                        <div class="step-mini-tags"><span class="mini-tag">FastAPI</span><span class="mini-tag">Routers</span><span class="mini-tag">Services</span></div>
                       </div>
-                      <h4 class="step-slide-title">Découplage Fonctionnel &amp; Injection de Dépendances</h4>
-                      <p class="step-slide-desc">Organisation claire des responsabilités pour garantir l'évolutivité et la testabilité unitaire des services bancaires.</p>
+                      <h4 class="step-slide-title">Découplage Fonctionnel &amp; Organisation des Services</h4>
+                      <p class="step-slide-desc">Organisation claire des responsabilités pour structurer les endpoints et la logique des opérations bancaires.</p>
                       <ul class="step-slide-bullets">
-                        <li>Couche Routers isolant la réception et la sérialisation HTTP des requêtes.</li>
-                        <li>Couche Services appliquant les règles d'éligibilité financière et plafonds.</li>
-                        <li>Gestion de cycle de vie des sessions de base de données via `Depends()`.</li>
+                        <li>Couche Routers isolant la réception et la sérialisation des requêtes HTTP.</li>
+                        <li>Couche Services appliquant les règles de gestion des soldes et des plafonds de transfert.</li>
+                        <li>Gestion du cycle de vie des sessions de base de données via le système de dépendances FastAPI.</li>
                       </ul>
                     </div>
 
                     <div class="step-slide" data-step="1">
                       <div class="step-slide-header">
-                        <span class="step-tag-pill">Étape 02 · Intégrité Transactionnelle</span>
-                        <div class="step-mini-tags"><span class="mini-tag">PostgreSQL</span><span class="mini-tag">Transactions</span></div>
+                        <span class="step-tag-pill">Étape 02 · Cohérence des Transactions</span>
+                        <div class="step-mini-tags"><span class="mini-tag">PostgreSQL</span><span class="mini-tag">Transactions SQL</span></div>
                       </div>
-                      <h4 class="step-slide-title">Verrouillage Atomique des Virements Inter-comptes</h4>
-                      <p class="step-slide-desc">Traitement unitaire des débits et crédits pour éliminer toute situation d'incohérence financière en cas de coupure.</p>
+                      <h4 class="step-slide-title">Gestion Transactionnelle des Virements</h4>
+                      <p class="step-slide-desc">Traitement unifié des débits et crédits pour prévenir les incohérences de solde lors des transferts.</p>
                       <ul class="step-slide-bullets">
-                        <li>Encapsulation des opérations bancaires dans des transactions atomiques PostgreSQL.</li>
-                        <li>Politique de rollback immédiat à la moindre exception levée lors d'un transfert.</li>
-                        <li>Historique immuable de chaque mouvement pour audit comptable.</li>
+                        <li>Encapsulation des opérations de virement dans des blocs transactionnels SQL.</li>
+                        <li>Politique de rollback en cas d'erreur ou d'échec d'une opération intermédiaire.</li>
+                        <li>Enregistrement d'un historique structuré de chaque mouvement de compte.</li>
                       </ul>
                     </div>
 
                     <div class="step-slide" data-step="2">
                       <div class="step-slide-header">
-                        <span class="step-tag-pill">Étape 03 · Sécurité &amp; Validation</span>
+                        <span class="step-tag-pill">Étape 03 · Authentification &amp; Sécurité</span>
                         <div class="step-mini-tags"><span class="mini-tag">FastAPI</span><span class="mini-tag">JWT</span><span class="mini-tag">Bcrypt</span></div>
                       </div>
                       <h4 class="step-slide-title">Authentification Sécurisée &amp; Validation des Requêtes</h4>
-                      <p class="step-slide-desc">Contrôle strict des identités et des données entrantes pour prévenir toute injection ou usurpation.</p>
+                      <p class="step-slide-desc">Contrôle des identités et des formats de données pour sécuriser les accès à l'API bancaire.</p>
                       <ul class="step-slide-bullets">
-                        <li>Génération de jetons JWT sécurisés et salage de mots de passe sous Bcrypt.</li>
-                        <li>Validation rigoureuse des montants et formats des transactions financières.</li>
-                        <li>Gestion fine des codes d'erreur HTTP pour ne divulguer aucune information sensible.</li>
+                        <li>Génération et vérification de jetons JWT sécurisés pour l'authentification des requêtes.</li>
+                        <li>Hachage des mots de passe utilisateurs à l'aide de l'algorithme bcrypt.</li>
+                        <li>Validation des montants et des données transmises avant exécution des opérations.</li>
                       </ul>
                     </div>
                   </div>
@@ -1364,8 +1364,9 @@
 
             <div class="project-footer">
               <div class="tag-row">
-                <span class="tag">Zero Trust Principles</span>
-                <span class="tag">Transactions Atomiques</span>
+                <span class="tag">Architecture FastAPI</span>
+                <span class="tag">Transactions SQL</span>
+                <span class="tag">Sécurité JWT &amp; Bcrypt</span>
               </div>
               <div class="project-actions">
                 <a href="#contact" class="btn-code-request" onclick="prepareContactProject('TrustVault')">
