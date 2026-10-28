@@ -2,7 +2,7 @@
 
 Portfolio professionnel de **Maryem Mabrouki**, étudiante en **Master 1 Ingénierie des Systèmes d'Information et Intelligence Artificielle (IS2IA)** à l'**ESISA** (Fès, Maroc).
 
-🔗 **Site en ligne :** [cv-portfolio-meryam.vercel.app](https://cv-portfolio-meryam.vercel.app)
+🔗 **Site en ligne :** [cv-portfolio-meryam.vercel.app](https://maryemmabrouki-portfolio2026.vercel.app/)
 
 ---
 

@@ -804,7 +804,7 @@
       line-height: 2.3rem;
       overflow: hidden;
       vertical-align: middle;
-      min-width: 310px;
+      min-width: 380px;
     }
 
     .role-rotator-item {
@@ -2950,6 +2950,34 @@
       color: #FFFFFF;
     }
 
+    .footer-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .footer-actions .theme-toggle {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #E2D7ED;
+    }
+
+    .footer-actions .theme-toggle:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: var(--gold);
+      color: var(--gold-soft);
+      transform: scale(1.05);
+    }
+
+    html[data-theme="dark"] .footer-actions .theme-toggle {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(184, 146, 90, 0.35);
+      color: var(--gold-soft);
+    }
+
     .floating-top-btn {
       position: fixed;
       bottom: 2rem;
@@ -3203,7 +3231,7 @@
         z-index: 1001;
       }
 
-      .nav-actions .btn-sm {
+      .nav-btn-contact {
         display: none;
       }
 
@@ -3228,7 +3256,107 @@
       }
     }
 
+    @media (max-width: 600px) {
+      .wrap {
+        padding: 0 1rem;
+      }
+
+      .project-card {
+        padding: 1.6rem 1.25rem;
+      }
+
+      .fixed-block {
+        padding: 0.95rem;
+      }
+
+      .timeline {
+        padding-left: 1.5rem;
+        margin-left: 0;
+      }
+
+      .tl-card {
+        padding: 1.3rem 1.1rem;
+      }
+
+      .stepper-track {
+        display: none;
+      }
+
+      .stepper-btn {
+        padding: 0.45rem 0.85rem;
+        min-height: 36px;
+      }
+
+      .contact-container {
+        padding: 2.2rem 1.25rem;
+      }
+
+      .contact-card {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 1.1rem 1.15rem;
+      }
+
+      .contact-info {
+        flex: 1 1 100%;
+        min-width: 0;
+      }
+
+      .contact-val {
+        word-break: break-all;
+        overflow-wrap: anywhere;
+        font-size: 0.92rem;
+      }
+
+      .contact-card .btn-copy {
+        margin-top: 0.35rem;
+      }
+    }
+
     @media (max-width: 520px) {
+      .site-nav .wrap {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+      }
+
+      .brand {
+        gap: 0.45rem;
+      }
+
+      .brand-mark {
+        width: 26px;
+        height: 26px;
+        font-size: 0.75rem;
+      }
+
+      .brand-name {
+        font-size: 0.86rem;
+      }
+
+      .brand-sub {
+        display: none;
+      }
+
+      .nav-actions {
+        gap: 0.4rem;
+      }
+
+      .nav-btn-cv {
+        padding: 0.35rem 0.65rem;
+        min-height: 36px;
+        font-size: 0.74rem;
+        gap: 0.3rem;
+      }
+
+      .nav-toggle {
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       .hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -3261,21 +3389,29 @@
       }
 
       .hero-role-rotator {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
         flex-direction: column;
         height: auto;
         gap: 0.4rem;
         margin-bottom: 1.3rem;
+        align-items: center;
       }
 
       .role-rotator-viewport {
         min-width: unset;
         width: 100%;
+        max-width: 100%;
+        height: 2.3rem;
+        overflow: hidden;
       }
 
       .role-rotator-item {
         font-size: 1.15rem;
         width: 100%;
         text-align: center;
+        white-space: nowrap;
       }
 
       .hero-cta-group {
@@ -3291,6 +3427,51 @@
       .hero-metrics-strip {
         grid-template-columns: 1fr;
         gap: 0.85rem;
+      }
+
+      .pipeline-flow-grid {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+      }
+
+      .hash-input-row {
+        flex-wrap: wrap;
+      }
+
+      .hash-input-row .btn-hash-run {
+        width: 100%;
+        padding: 0.55rem;
+        min-height: 38px;
+      }
+
+      .hash-table-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-container {
+        padding: 1.8rem 1rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero h1 {
+        font-size: 2.05rem;
+      }
+
+      .brand-name {
+        font-size: 0.82rem;
+      }
+
+      .role-rotator-item {
+        font-size: 1.02rem;
+      }
+
+      .project-card {
+        padding: 1.35rem 1rem;
+      }
+
+      .tl-card {
+        padding: 1.15rem 0.95rem;
       }
     }
 
