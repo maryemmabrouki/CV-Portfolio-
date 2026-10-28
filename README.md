@@ -37,37 +37,41 @@ CV-Portfolio-/
 ## 💼 Projets Mis en Valeur
 
 1. **MrcLens — Plateforme Touristique & Culturelle Intelligente**
-   * *Projet Collectif PFA* — React Native / Expo, React.js, FastAPI, EfficientNetV2-S (93,5% d'accuracy), ChromaDB + GPT-4o, MongoDB Atlas, Redis.
-   * Distinction claire : mes contributions personnelles (participation à la conception globale de la plateforme, pipeline RAG et modélisation UML, billetterie à QR codes dynamiques et géolocalisation, déploiements cloud sur Vercel et Render) vs résultats d'équipe.
+   * *Projet d'équipe de fin d'année (PFA, mars — août 2026)* — React Native / Expo, React.js, Node.js / Express, FastAPI, EfficientNetV2-S (résultats de validation : ~93,5% d'accuracy et F1-macro ~0,93 sur 24 classes patrimoniales), ChromaDB + GPT-4o, MongoDB Atlas, Redis, Socket.IO.
+   * *Contributions personnelles :* participation au développement de la billetterie par QR code, aux fonctionnalités temps réel, au pipeline RAG multilingue, à la modélisation UML, à la gestion des événements et types de salles, ainsi qu'aux déploiements sur Vercel et Render.
 
-2. **Kenza — Agent Commercial IA & E-commerce**
-   * *Hackathon ESISA × Numeos Technology (55 heures en autonomie)*.
-   * Projet individuel d'agent conversationnel autonome (Fastify, Redis/BullMQ, PostgreSQL, Next.js). La qualité du travail réalisé m'a permis d'être invitée à un entretien d'échange avec les organisateurs.
+2. **Kenza — Agent Commercial IA**
+   * *Hackathon ESISA × Numeos Technology (septembre 2026 — 55 heures en autonomie)*.
+   * Projet individuel d'agent conversationnel autonome multilingue (français, arabe, darija) : orchestration agentique avec LangGraph.js, Azure OpenAI (GPT-4.1 et GPT-5.5), Fastify, Redis / BullMQ, PostgreSQL et Next.js. Outils métier, gestion de mémoire de l'agent et invitation à un entretien d'échange avec les organisateurs.
 
 3. **INCUBOOSTER — Application Desktop de Gestion des Coûts & Pilotage Financier**
-   * *Stage de développement logiciel (2 mois)*.
-   * Application desktop sous Java 17, JavaFX, Hibernate/JPA et SQLite avec 56 tests automatisés (suite unitaire et d'intégration JUnit 5).
+   * *Stage de développement logiciel (juillet — octobre 2026)* pour la PME Délices Benkirane.
+   * Application desktop sous Java 17, JavaFX, Hibernate/JPA et SQLite : architecture en couches, calcul des coûts de revient et marges, tableau de bord financier, exports PDF/Excel/CSV et suite de 56 tests automatisés sous JUnit 5 (unitaires, intégration, end-to-end).
 
-4. **TrustVault — Architecture Bancaire Sécurisée & Micro-services**
-   * API sécurisée avec FastAPI, PostgreSQL, authentification JWT avec gestion fine des rôles (RBAC) et chiffrement de bout en bout.
+4. **Techniques de Hachage & Résolution des Collisions en C++**
+   * *Projet académique — Algorithmique & Structures de Données* (ESISA, encadrement : M. O. Mekouar et M. Genoun).
+   * Fonctions de hachage par division et polynomiales, résolution des collisions par chaînage séparé et adressage ouvert (sondage linéaire), analyse de complexité moyenne O(1) et pire cas O(n), avec démonstration interactive intégrée.
 
-5. **Analyse BI & Décisionnelle — 177 Dossiers de Patients Diabétiques**
-   * Analyse de 177 dossiers de patients diabétiques issus des données fournies par le CHU sur une période d'un mois. Nettoyage de données sous Power Query, modélisation sous Power BI et analyses statistiques sous R (FactoMineR, AFC, K-means).
+5. **TrustVault — API Bancaire Simulée Sécurisée**
+   * Architecture backend en Python (FastAPI) et PostgreSQL pour une application bancaire simulée.
+   * Gestion des dépôts, retraits et virements avec transactions atomiques SQL, authentification JWT, hachage des mots de passe avec bcrypt et validation stricte des requêtes via Pydantic.
 
-6. **Implémentation des Techniques de Hachage en C++**
-   * *Projet académique — Algorithmique & Structures de Données* (Encadrement : M. O. Mekouar et M. Genoun).
-   * Fonctions de hachage, stratégies de résolution des collisions et analyse de complexité sur les opérations d'insertion, de recherche et de suppression.
+6. **Analyse BI & Statistiques — 177 Patients Diabète CHU**
+   * *Projet académique décisionnel et statistique (avril — juin 2026)* à partir des données anonymisées de 177 patients diabétiques fournies par un CHU sur un mois.
+   * Préparation et nettoyage sous Power Query, modélisation DAX, 3 tableaux de bord Power BI et analyses statistiques multivariées sous R (FactoMineR, AFC, K-means, CHA). Projet à visée décisionnelle et statistique, sans diagnostic médical direct.
 
-7. **Rendezy — Plateforme Full-Stack de Prise de Rendez-vous**
-   * Interface réactive avec gestion des créneaux, validation de formulaires et suivi des confirmations (Node.js, Express, MongoDB, Leaflet.js).
+7. **Rendezy — Plateforme Web de Prise de RDV Multi-services**
+   * Plateforme web de réservation et gestion de créneaux multi-services : architecture MVC avec API RESTful en Node.js et Express, persistance NoSQL MongoDB & Mongoose, sécurisation JWT / bcrypt et géolocalisation Leaflet.js.
 
 ---
 
 ## 🏆 Distinctions & Engagements
 
-- **2ᵉ place lors de la première phase — Hackathon ESISA Senior Developers** (Juillet 2025) : 2ᵉ place lors de la première phase de sélection (quiz technique et épreuve algorithmique parmi 45 équipes participantes), suivie de l'épreuve de live coding en C++, Python et JavaScript.
-- **Présidente du Club de Débat ESISA** (2026 — Présent) : Coordination des ateliers d'art oratoire et organisation de compétitions inter-universitaires.
-- **Jury Invité TEHD 2.0** : Évaluation de projets et pitchs étudiants.
+- **Présidente du Club de Débat ESISA** (2026 — Présent) : Coordination des ateliers de rhétorique et d'éloquence, formation des membres et organisation de compétitions.
+- **2ᵉ place lors de la première phase — Hackathon ESISA Senior Developers** (Juillet 2025) : 2ᵉ place lors de la première phase de sélection (quiz technique et épreuve algorithmique parmi 45 équipes), suivie de l'épreuve de live coding de 3 heures en C++, Python et JavaScript.
+- **Membre du Jury — The 2nd Elite High-School Debate (TEHD)** (29–30 novembre 2025, ENCG Fès) : Évaluation officielle de la structure argumentative et de l'art oratoire pour les débats en arabe.
+- **ESISA CREATORS** (10 janvier 2026) : Participation à l'événement entrepreneurial et tables rondes avec des innovateurs technologiques.
+- **Attestation de Mérite — BDE ESISA** (Juin 2025) : Reconnaissance décernée par le Bureau des Étudiants pour l'engagement actif et l'animation de la vie étudiante.
 
 ---
 
