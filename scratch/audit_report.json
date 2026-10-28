@@ -1,0 +1,297 @@
+{
+  "consoleLogs": [],
+  "consoleErrors": [],
+  "viewports": {
+    "desktop_1440_light": {
+      "docWidth": 1425,
+      "scrollWidth": 1425,
+      "hasHScroll": false,
+      "overflowing": []
+    },
+    "mobile_390_light": {
+      "docWidth": 390,
+      "scrollWidth": 390,
+      "hasHScroll": false,
+      "overflowing": []
+    },
+    "mobile_390_dark": {
+      "docWidth": 390,
+      "scrollWidth": 390,
+      "hasHScroll": false,
+      "overflowing": []
+    },
+    "mobile_360_dark": {
+      "docWidth": 360,
+      "scrollWidth": 360,
+      "hasHScroll": false,
+      "overflowing": []
+    }
+  },
+  "interactions": {
+    "themeToggleDark": {
+      "clicked": true,
+      "themeAttr": "dark",
+      "localStorage": "dark",
+      "toastText": "Mode sombre activé"
+    },
+    "skillsSearch": {
+      "scapyRes": {
+        "query": "Scapy",
+        "feedback": "1 compétence(s) trouvée(s)",
+        "emptyDisplay": "none",
+        "visibleCount": 1,
+        "visibleCats": [
+          "reseaux"
+        ]
+      },
+      "tcpRes": {
+        "query": "TCP/IP",
+        "feedback": "1 compétence(s) trouvée(s)",
+        "emptyDisplay": "none",
+        "visibleCount": 1,
+        "visibleCats": [
+          "reseaux"
+        ]
+      },
+      "ragRes": {
+        "query": "RAG",
+        "feedback": "1 compétence(s) trouvée(s)",
+        "emptyDisplay": "none",
+        "visibleCount": 1,
+        "visibleCats": [
+          "genai"
+        ]
+      },
+      "badRes": {
+        "query": "InexistantXYZ",
+        "feedback": "0 compétence(s) trouvée(s)",
+        "emptyDisplay": "block",
+        "visibleCount": 0,
+        "visibleCats": []
+      },
+      "resetRes": {
+        "query": "",
+        "feedback": "",
+        "emptyDisplay": "none",
+        "visibleCount": 10,
+        "visibleCats": [
+          "langages",
+          "software-backend",
+          "web-mobile",
+          "database",
+          "genai",
+          "ml-cv",
+          "bi",
+          "methods",
+          "devops",
+          "reseaux"
+        ]
+      }
+    },
+    "projectFilters": {
+      "ia": {
+        "error": "Filter pill not found: ia"
+      },
+      "fullstack": {
+        "error": "Filter pill not found: fullstack"
+      },
+      "algo": {
+        "error": "Filter pill not found: algo"
+      },
+      "all": {
+        "error": "Filter pill not found: all"
+      }
+    },
+    "widgets": {
+      "hashResult": "Tapez une clé ou cliquez sur une suggestion pour\n                  observer le bucket et la gestion des collisions.",
+      "slotResult": "09:00 sélectionné (créneau disponible)"
+    }
+  },
+  "links": [
+    {
+      "text": "Passer au contenu",
+      "href": "#mainContent",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "MM Maryem Mabrouki Full-Stack & IA · ESISA",
+      "href": "#top",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Profil",
+      "href": "#profil",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Projets",
+      "href": "#projets",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Expérience",
+      "href": "#experience",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Compétences",
+      "href": "#competences",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Formation",
+      "href": "#formation",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Engagements",
+      "href": "#engagements",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Contact",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "CV (PDF)",
+      "href": "assets/CV_Maryem_MABROUKI.pdf",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "text": "Me contacter",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Voir mes projets",
+      "href": "#projets",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Consulter le CV (PDF)",
+      "href": "assets/CV_Maryem_MABROUKI.pdf",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "text": "Me contacter",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "maryemmabrouki",
+      "href": "https://github.com/maryemmabrouki",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "text": "LinkedIn",
+      "href": "https://linkedin.com/in/maryem-mabrouki-0058942a5",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "text": "Code disponible sur demande",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Code disponible sur demande",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Code disponible sur demande",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Code disponible sur demande",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Code disponible sur demande",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Code disponible sur demande",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Code disponible sur demande",
+      "href": "#contact",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "mabrouki.maryem37@gmail.com",
+      "href": "mailto:mabrouki.maryem37@gmail.com",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "+212 642 683 395",
+      "href": "tel:+212642683395",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Écrire sur WhatsApp",
+      "href": "https://wa.me/212642683395",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "text": "LinkedIn",
+      "href": "https://linkedin.com/in/maryem-mabrouki-0058942a5",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/maryemmabrouki",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    }
+  ],
+  "screenshots": {
+    "desktop_light_hero.png": "C:\\Users\\pc\\.gemini\\antigravity\\brain\\2320a731-1ebf-46d1-b9d1-7247f79abd35\\desktop_light_hero.png",
+    "desktop_dark_hero.png": "C:\\Users\\pc\\.gemini\\antigravity\\brain\\2320a731-1ebf-46d1-b9d1-7247f79abd35\\desktop_dark_hero.png",
+    "desktop_dark_skills.png": "C:\\Users\\pc\\.gemini\\antigravity\\brain\\2320a731-1ebf-46d1-b9d1-7247f79abd35\\desktop_dark_skills.png",
+    "desktop_dark_projects.png": "C:\\Users\\pc\\.gemini\\antigravity\\brain\\2320a731-1ebf-46d1-b9d1-7247f79abd35\\desktop_dark_projects.png",
+    "desktop_dark_contact_footer.png": "C:\\Users\\pc\\.gemini\\antigravity\\brain\\2320a731-1ebf-46d1-b9d1-7247f79abd35\\desktop_dark_contact_footer.png",
+    "mobile_light_hero.png": "C:\\Users\\pc\\.gemini\\antigravity\\brain\\2320a731-1ebf-46d1-b9d1-7247f79abd35\\mobile_light_hero.png",
+    "mobile_light_skills.png": "C:\\Users\\pc\\.gemini\\antigravity\\brain\\2320a731-1ebf-46d1-b9d1-7247f79abd35\\mobile_light_skills.png",
+    "mobile_dark_skills.png": "C:\\Users\\pc\\.gemini\\antigravity\\brain\\2320a731-1ebf-46d1-b9d1-7247f79abd35\\mobile_dark_skills.png",
+    "mobile_dark_hero.png": "C:\\Users\\pc\\.gemini\\antigravity\\brain\\2320a731-1ebf-46d1-b9d1-7247f79abd35\\mobile_dark_hero.png"
+  },
+  "texts": {
+    "heroLead": "Étudiante en Master IS2IA à l’ESISA, après une Licence en Ingénierie Logicielle, je développe mes compétences en conception logicielle, développement Full-Stack et intelligence artificielle. À travers mes projets académiques et pratiques, j’explore la création d’applications web, mobiles et backend, ainsi que les systèmes RAG, les agents intelligents et la vision par ordinateur. Je souhaite poursuivre mon parcours dans un environnement stimulant, à travers une formation d’ingénieur et des opportunités professionnelles adaptées à mon projet.",
+    "heroBadge": "Candidate École d'Ingénieurs • Ouverte aux opportunités & alternance Full-Stack / IA",
+    "aboutLead": "",
+    "contactSub": "Vous souhaitez échanger sur une candidature en école d'ingénieurs, une opportunité d'alternance ou une collaboration technique ? N'hésitez pas à me contacter."
+  }
+}

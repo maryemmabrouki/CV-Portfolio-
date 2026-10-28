@@ -240,7 +240,10 @@
     // 0.1 Gestion du Thème (Clair par défaut + Bascule Sombre optionnelle)
     (function initTheme() {
       const themeToggle = document.getElementById('themeToggle');
-      const storedTheme = localStorage.getItem('mm-theme');
+      let storedTheme = null;
+      try {
+        storedTheme = localStorage.getItem('mm-theme');
+      } catch (e) {}
 
       if (storedTheme) {
         if (storedTheme === 'dark') {
@@ -259,7 +262,9 @@
           } else {
             document.documentElement.removeAttribute('data-theme');
           }
-          localStorage.setItem('mm-theme', newTheme);
+          try {
+            localStorage.setItem('mm-theme', newTheme);
+          } catch (e) {}
           showToast(newTheme === 'dark' ? 'Mode sombre activé' : 'Mode clair activé');
         });
       }
@@ -417,11 +422,11 @@
 
         if (activeAnchor) {
           movePillTo(activeAnchor);
-        } else if (scrollY < 120 && navAnchors.length > 0) {
-          navAnchors[0].classList.add('active');
-          movePillTo(navAnchors[0]);
-        } else if (pillIndicator) {
-          pillIndicator.style.opacity = '0';
+        } else {
+          navAnchors.forEach(a => a.classList.remove('active'));
+          if (pillIndicator) {
+            pillIndicator.style.opacity = '0';
+          }
         }
       }
 
@@ -859,13 +864,22 @@
       }
     }
 
-    // 8. Recherche instantanée dans les compétences avec état vide
+    // 8. Recherche instantanée dans les compétences avec état vide & placeholder adaptatif
     const skillSearchInput = document.getElementById('skillSearch');
     const skillCards = document.querySelectorAll('.skill-cat-card');
     const searchFeedback = document.getElementById('searchFeedback');
     const skillEmptyState = document.getElementById('skillEmptyState');
 
     if (skillSearchInput) {
+      function updateSearchPlaceholder() {
+        if (window.innerWidth <= 600) {
+          skillSearchInput.placeholder = "Rechercher (ex. Python, Scapy, RAG)...";
+        } else {
+          skillSearchInput.placeholder = "Rechercher une technologie (ex: Python, Docker, C++, RAG, Scapy, TCP/IP, React)...";
+        }
+      }
+      updateSearchPlaceholder();
+      window.addEventListener('resize', updateSearchPlaceholder, { passive: true });
       skillSearchInput.addEventListener('input', function () {
         const query = this.value.trim().toLowerCase();
         let matchCount = 0;

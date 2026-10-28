@@ -78,7 +78,7 @@ projectCards.forEach(p => console.log(`- ${p[1]}`));
 
 // 6. Vérification des catégories de compétences
 const skillCats = [...html.matchAll(/class="skill-cat-card" data-cat="([^"]+)"/g)];
-console.log(`\nCatégories de compétences identifiées (${skillCats.length}/9) :`);
+console.log(`\nCatégories de compétences identifiées (${skillCats.length}/10) :`);
 skillCats.forEach(c => console.log(`- ${c[1]}`));
 
 console.log('\n=== FIN DU RAPPORT DE VERIFICATION ===');

@@ -3,22 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
+  <script>
+    try {
+      if (localStorage.getItem('mm-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (e) { }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maryem Mabrouki — Ingénierie Logicielle, Full-Stack &amp; Intelligence Artificielle | Recherche Alternance
+  <title>Maryem MABROUKI — Ingénierie Logicielle, Full-Stack &amp; Intelligence Artificielle | Portfolio &amp; Parcours
   </title>
   <meta name="description"
-    content="Portfolio professionnel de Maryem Mabrouki. Étudiante en Master IS2IA à l'ESISA, à la recherche d'une alternance en développement logiciel, Full-Stack ou intelligence artificielle. Projets concrets en ingénierie logicielle, RAG, agents IA, vision par ordinateur et algorithmique.">
+    content="Portfolio de Maryem Mabrouki, étudiante en Master IS2IA à l'ESISA. Projets en ingénierie logicielle, développement Full-Stack, IA appliquée, candidate école d'ingénieurs et opportunités tech / alternance.">
   <meta name="author" content="Maryem Mabrouki">
   <meta name="keywords"
-    content="Maryem Mabrouki, Alternance, Full-Stack, Intelligence Artificielle, RAG, Computer Vision, C++, Algorithmique, ESISA, Fès, Maroc, FastAPI, React, Next.js, Python, Java, Power BI">
+    content="Maryem Mabrouki, École d'ingénieurs, Alternance, Full-Stack, Intelligence Artificielle, RAG, Computer Vision, C++, Réseaux, Scapy, Npcap, Algorithmique, ESISA, Fès, Maroc, FastAPI, React, Next.js, Python, Java, Power BI">
 
   <meta name="theme-color" content="#33213F">
   <link rel="canonical" href="https://cv-portfolio-meryam.vercel.app">
 
   <!-- Open Graph / Meta Réseaux Sociaux -->
-  <meta property="og:title" content="Maryem Mabrouki — Développement Full-Stack &amp; Intelligence Artificielle">
+  <meta property="og:title"
+    content="Maryem Mabrouki — Ingénierie Logicielle, Full-Stack &amp; Intelligence Artificielle">
   <meta property="og:description"
-    content="Portfolio professionnel : Étudiante en Master IS2IA, à la recherche d'une alternance en développement logiciel, Full-Stack ou IA. Projets en RAG, vision, architectures logicielles et algorithmique.">
+    content="Portfolio académique et professionnel de Maryem Mabrouki : étudiante en Master IS2IA, candidate en école d'ingénieurs et ouverte aux opportunités professionnelles et alternance en Full-Stack &amp; IA.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:url" content="https://cv-portfolio-meryam.vercel.app">
@@ -35,10 +43,10 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Maryem Mabrouki",
+    "name": "Maryem MABROUKI",
     "url": "https://cv-portfolio-meryam.vercel.app",
     "image": "https://cv-portfolio-meryam.vercel.app/assets/profile.jpg",
-    "jobTitle": "Étudiante en Master IS2IA · Recherche Alternance en Développement Logiciel, Full-Stack & Intelligence Artificielle",
+    "jobTitle": "Étudiante en Master IS2IA — Candidate École d'Ingénieurs & Opportunités en Développement Logiciel, Full-Stack & Intelligence Artificielle",
     "worksFor": {
       "@type": "EducationalOrganization",
       "name": "ESISA (École Supérieure d'Ingénierie en Sciences Appliquées)"
@@ -102,7 +110,14 @@
     <div class="reading-progress-bar" id="readingProgressBar" aria-hidden="true"></div>
     <div class="wrap">
       <a href="#top" class="brand" aria-label="Accueil — Maryem Mabrouki">
-        <div class="brand-mark" aria-hidden="true">MM</div>
+        <div class="brand-mark" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="7 8 3 12 7 16" />
+            <polyline points="17 8 21 12 17 16" />
+            <line x1="14" y1="4" x2="10" y2="20" />
+            <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none" />
+          </svg>
+        </div>
         <div class="brand-text">
           <span class="brand-name">Maryem Mabrouki</span>
           <span class="brand-sub">Full-Stack &amp; IA · ESISA</span>
@@ -159,13 +174,13 @@
       <div class="wrap">
         <div class="hero-grid">
           <div class="hero-copy">
-            <!-- Badge Statut : Recherche d'Alternance (Objectif officiel) -->
+            <!-- Badge Statut : Écoles d'Ingénieurs & Opportunités Tech -->
             <div class="status-badge">
               <span class="pulse-dot"></span>
-              <span>À la recherche d'une alternance · Développement Logiciel, Full-Stack ou IA</span>
+              <span>Candidate École d'Ingénieurs • Ouverte aux opportunités &amp; alternance Full-Stack / IA</span>
             </div>
 
-            <h1><span class="name-shimmer">Maryem<br>Mabrouki</span></h1>
+            <h1><span class="name-shimmer">MARYEM<br>MABROUKI</span></h1>
 
             <!-- Titre & Rôles alternants sans saut de mise en page -->
             <div class="hero-role-rotator"
@@ -181,12 +196,12 @@
             </div>
 
             <p class="lead">
-              Étudiante en Master IS2IA à l’ESISA, après une Licence en Ingénierie Logicielle, je recherche une
-              alternance
-              en développement logiciel, Full-Stack ou intelligence artificielle. Mon profil allie conception
-              d’applications
-              robustes (web, mobile, backend) et IA appliquée (systèmes RAG, agents intelligents, vision par
-              ordinateur).
+              Étudiante en Master IS2IA à l’ESISA, après une Licence en Ingénierie Logicielle, je développe mes
+              compétences en conception logicielle, développement Full-Stack et intelligence artificielle. À travers mes
+              projets académiques et pratiques, j’explore la création d’applications web, mobiles et backend, ainsi que
+              les systèmes RAG, les agents intelligents et la vision par ordinateur. Je souhaite poursuivre mon parcours
+              dans un environnement stimulant, à travers une formation d’ingénieur et des opportunités professionnelles
+              adaptées à mon projet.
             </p>
 
             <!-- Actions principales -->
@@ -311,22 +326,25 @@
         <div class="profil-grid">
           <div class="profil-text">
             <p>
-              Actuellement étudiante en <strong>Master IS2IA</strong> (Ingénierie des Systèmes d’Information et
-              Intelligence Artificielle) à l’<strong>ESISA</strong> après une <strong>Licence en Ingénierie
-                Logicielle</strong>, je recherche activement une <strong>opportunité d'alternance</strong> afin de
-              mettre mes compétences au service de projets concrets et stimulants.
+              Actuellement en <strong>Master IS2IA</strong> (Ingénierie des Systèmes d’Information et
+              Intelligence Artificielle) à l’<strong>ESISA</strong>, j'approfondis les fondements de l'ingénierie
+              logicielle,
+              de l'architecture logicielle et de l'intelligence artificielle. Mon objectif est d'intégrer une
+              <strong>école d'ingénieurs</strong> de premier plan tout en restant à l'écoute d'<strong>opportunités
+                professionnelles (notamment en alternance)</strong>
+              permettant de déployer mes compétences sur des défis concrets.
             </p>
             <p>
               Mon travail s'articule autour de la conception d'applications logicielles, web et mobiles (Java/JavaFX,
-              Fastify,
-              FastAPI, Node.js, Next.js, React Native) et de leur articulation avec des briques d'intelligence
-              artificielle : <strong>systèmes RAG, agents intelligents multi-outils, traitement du langage naturel,
-                vision
+              Fastify, FastAPI, Node.js, Next.js, React Native), de l'analyse des réseaux et protocoles (Scapy, Npcap),
+              et de leur articulation avec des briques d'intelligence
+              artificielle : <strong>systèmes RAG, agents intelligents multi-outils, vision
                 par ordinateur et algorithmique fondamentale (C++)</strong>.
             </p>
             <p>
-              Chaque projet est conduit avec une exigence de modularité, de maintenabilité et d'adéquation aux besoins
-              concrets — qu'il s'agisse de la gestion financière d'une PME ou de la valorisation du patrimoine marocain.
+              Chaque projet — qu'il soit académique ou pratique — est conduit avec une exigence de modularité, de
+              rigueur méthodologique, de maintenabilité et d'adéquation aux besoins
+              réels — de l'infrastructure logicielle d'une PME à la valorisation du patrimoine marocain.
             </p>
 
             <div class="qualities-grid">
@@ -446,7 +464,7 @@
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
             <input type="text" id="skillSearch" class="search-input"
-              placeholder="Rechercher une technologie (ex: Python, Docker, C++, RAG, React)..."
+              placeholder="Rechercher une technologie (ex: Python, Docker, C++, RAG, Scapy, TCP/IP, React)..."
               aria-label="Rechercher une compétence">
           </div>
           <span id="searchFeedback"
@@ -674,6 +692,35 @@
               <span class="tag">bcrypt</span>
               <span class="tag">Linux / Bash</span>
               <span class="tag">Docker <small style="opacity:0.75">(notions)</small></span>
+            </div>
+          </div>
+
+          <!-- 10. Réseaux & Protocoles -->
+          <div class="skill-cat-card" data-cat="reseaux">
+            <div class="skill-cat-head">
+              <div class="skill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="6" height="6" rx="1" />
+                  <rect x="16" y="2" width="6" height="6" rx="1" />
+                  <rect x="9" y="16" width="6" height="6" rx="1" />
+                  <path d="M5 8v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8" />
+                  <line x1="12" y1="12" x2="12" y2="16" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Réseaux &amp; Protocoles</h3>
+            </div>
+            <div class="tag-row skill-tags">
+              <span class="tag">TCP/IP</span>
+              <span class="tag">TCP / UDP</span>
+              <span class="tag">ICMP</span>
+              <span class="tag">ARP</span>
+              <span class="tag">Ethernet</span>
+              <span class="tag">Python Scapy</span>
+              <span class="tag">Npcap</span>
+              <span class="tag">PCAP</span>
+              <span class="tag">Analyse de trafic réseau</span>
+              <span class="tag">Projet SharkWeb</span>
             </div>
           </div>
 
@@ -2813,8 +2860,8 @@
               Contact Direct
             </p>
             <h2>Concevons ensemble des solutions performantes</h2>
-            <p class="sub">À la recherche d'une alternance en développement logiciel, Full-Stack ou intelligence
-              artificielle. Ouverte aux échanges et collaborations techniques.</p>
+            <p class="sub">Vous souhaitez échanger sur une candidature en école d'ingénieurs, une opportunité
+              d'alternance ou une collaboration technique ? N'hésitez pas à me contacter.</p>
           </div>
 
           <div class="contact-grid">
@@ -2900,9 +2947,10 @@
               <!-- Carte localisation & contact -->
               <div
                 style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.14); border-radius:var(--radius); padding:1.2rem; font-size:0.86rem; color:var(--violet-soft); line-height:1.5;">
-                <strong style="color:#FFFFFF; display:block; margin-bottom:0.25rem;">Disponibilité Alternance</strong>
-                Basée à Fès (Maroc), ouverte aux formats d'alternance ou de collaboration technique avec les équipes de
-                développement logiciel et d'ingénierie IA.
+                <strong style="color:#FFFFFF; display:block; margin-bottom:0.25rem;">Disponibilité &amp;
+                  Mobilité</strong>
+                Basée à Fès (Maroc), mobile pour une intégration en formation d'ingénieur en France et ouverte aux
+                opportunités d'alternance ou de collaboration technique en développement logiciel &amp; IA.
               </div>
             </div>
 
@@ -2922,13 +2970,13 @@
               <div class="form-group">
                 <label for="cSubject">Sujet de l'échange *</label>
                 <input type="text" id="cSubject" class="form-input"
-                  value="Opportunité Alternance / Collaboration — Développement Logiciel &amp; IA" required>
+                  value="Candidature École d'Ingénieurs / Opportunité Alternance &amp; Tech" required>
               </div>
 
               <div class="form-group">
                 <label for="cMsg">Votre message *</label>
                 <textarea id="cMsg" class="form-textarea"
-                  placeholder="Bonjour Maryem, nous avons découvert votre profil et vos projets en IA/Full-Stack et nous aimerions échanger concernant une alternance..."
+                  placeholder="Bonjour Maryem, nous avons découvert votre profil et vos projets académiques et souhaitons échanger..."
                   required></textarea>
               </div>
 
@@ -2959,11 +3007,19 @@
     <div class="wrap">
       <div class="footer-content">
         <div class="footer-brand">
-          <div class="brand-mark" style="width:32px; height:32px; font-size:0.85rem;" aria-hidden="true">MM</div>
+          <div class="brand-mark" style="width:32px; height:32px;" aria-hidden="true">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="7 8 3 12 7 16" />
+              <polyline points="17 8 21 12 17 16" />
+              <line x1="14" y1="4" x2="10" y2="20" />
+              <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none" />
+            </svg>
+          </div>
           <div>
             <div style="font-weight:700; color:#FFFFFF;">Maryem Mabrouki</div>
             <div style="font-family:'IBM Plex Mono',monospace; font-size:0.72rem; color:var(--violet-soft);">
-              © 2026 — Fès, Maroc · À la recherche d'une alternance Full-Stack &amp; IA
+              © 2026 • Fès, Maroc • Étudiante Master IS2IA • Candidate École d'Ingénieurs &amp; Alternance Full-Stack /
+              IA
             </div>
           </div>
         </div>
