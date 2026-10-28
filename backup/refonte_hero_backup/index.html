@@ -1,0 +1,2537 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maryem Mabrouki — Développement Full-Stack &amp; Intelligence Artificielle | Recherche Alternance</title>
+  <meta name="description"
+    content="Portfolio officiel de Maryem Mabrouki. Étudiante en Master IS2IA à l'ESISA, à la recherche d'une alternance en développement logiciel, Full-Stack ou intelligence artificielle. Projets en RAG, Vision par Ordinateur, architectures web/mobiles et algorithmique.">
+  <meta name="author" content="Maryem Mabrouki">
+  <meta name="keywords"
+    content="Maryem Mabrouki, Alternance, Full-Stack, Intelligence Artificielle, RAG, Computer Vision, C++, Algorithmique, ESISA, Fès, Maroc, FastAPI, React, Next.js, Python, Java, Power BI">
+
+  <!-- Open Graph / Meta Réseaux Sociaux -->
+  <meta property="og:title" content="Maryem Mabrouki — Développement Full-Stack &amp; Intelligence Artificielle">
+  <meta property="og:description"
+    content="Portfolio professionnel : Étudiante en Master IS2IA, à la recherche d'une alternance en développement logiciel, Full-Stack ou IA. Projets en RAG, vision, architectures logicielles et algorithmique.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://cv-portfolio-meryam.vercel.app">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maryem Mabrouki — Full-Stack &amp; IA | Alternance">
+  <meta name="twitter:description"
+    content="Portfolio officiel de Maryem Mabrouki : architectures logicielles &amp; systèmes intelligents.">
+
+  <!-- Favicon SVG aux couleurs de l'identité prune & or -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2333213F'/><text x='50%' y='63%' font-family='serif' font-weight='700' font-size='46' fill='%23B8925A' text-anchor='middle'>MM</text></svg>">
+
+  <!-- Typographies Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+  <!-- Bouton flottant retour en haut -->
+  <button class="floating-top-btn" id="floatingTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    aria-label="Retour en haut de page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <!-- ========================================================
+       BARRE DE NAVIGATION STICKY
+       ======================================================== -->
+  <header class="site-nav" id="siteNav">
+    <div class="wrap">
+      <a href="#top" class="brand" aria-label="Accueil — Maryem Mabrouki">
+        <div class="brand-mark" aria-hidden="true">MM</div>
+        <div class="brand-text">
+          <span class="brand-name">Maryem Mabrouki</span>
+          <span class="brand-sub">Full-Stack &amp; IA · ESISA</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#engagements">Engagements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="assets/CV_Maryem_MABROUKI.pdf" target="_blank" rel="noopener noreferrer" class="nav-btn-cv" aria-label="Consulter et télécharger le CV officiel de Maryem Mabrouki (PDF)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>CV (PDF)</span>
+        </a>
+        <a href="#contact" class="nav-btn-contact">
+          <span>Me contacter</span>
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème (clair / sombre)" title="Basculer le thème (clair / sombre)">
+          <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         HERO SECTION (Présentation, Alternance & Chiffres clés)
+         ======================================================== -->
+    <section class="hero" id="heroSection">
+      <!-- Toile algorithmique & courbes orbitales discrètes -->
+      <canvas id="heroBgCanvas" class="hero-bg-canvas" aria-hidden="true"></canvas>
+
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <!-- Badge Statut : Recherche d'Alternance (Objectif officiel) -->
+            <div class="status-badge">
+              <span class="pulse-dot"></span>
+              <span>À la recherche d'une alternance · Développement Logiciel, Full-Stack ou IA</span>
+            </div>
+
+            <h1><span class="name-shimmer">Maryem<br>Mabrouki</span></h1>
+
+            <!-- Titre & Rôles -->
+            <div class="hero-role-badges">
+              <span class="hero-role-pill">Développement Full-Stack</span>
+              <span class="hero-role-pill">Intelligence Artificielle</span>
+              <span class="hero-role-pill">Systèmes RAG &amp; Vision</span>
+            </div>
+
+            <p class="lead">
+              Étudiante en Master IS2IA à l’ESISA, à la recherche d'une alternance en développement logiciel, Full-Stack
+              ou intelligence artificielle. Projets couvrant la conception d’applications web et mobiles ainsi que des
+              systèmes intelligents : RAG, agents IA et vision par ordinateur.
+            </p>
+
+            <!-- Actions principales -->
+            <div class="hero-cta-group">
+              <a href="#projets" class="btn btn-gold">
+                <span>Voir mes projets</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+              <a href="assets/CV_Maryem_MABROUKI.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost-light" aria-label="Consulter et télécharger le CV officiel de Maryem Mabrouki en format PDF">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Consulter le CV (PDF)</span>
+              </a>
+              <a href="#contact" class="btn btn-ghost-light">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <span>Me contacter</span>
+              </a>
+            </div>
+
+            <!-- Liens sociaux officiels -->
+            <div class="hero-social-row">
+              <a href="https://github.com/maryemmabrouki" target="_blank" rel="noopener noreferrer" class="social-link"
+                title="GitHub de Maryem Mabrouki">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>maryemmabrouki</span>
+              </a>
+              <a href="https://linkedin.com/in/maryem-mabrouki-0058942a5" target="_blank" rel="noopener noreferrer"
+                class="social-link" title="LinkedIn de Maryem Mabrouki">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <span class="social-link" style="color:var(--gold-soft);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Fès, Maroc</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Photo de profil avec animation orbitale préservée -->
+          <div class="hero-photo-wrap">
+            <svg class="ring" viewBox="0 0 346 346" aria-hidden="true">
+              <g fill="none" stroke="rgba(232, 217, 192, 0.55)" stroke-width="1.2" stroke-dasharray="1 11"
+                stroke-linecap="round">
+                <circle cx="173" cy="173" r="166" />
+              </g>
+            </svg>
+            <div class="hero-photo">
+              <img
+                src="assets/profile.jpg"
+                alt="Photo de profil de Maryem Mabrouki" width="290" height="290">
+            </div>
+          </div>
+        </div>
+
+        <!-- Rangée de chiffres clés réels animés -->
+        <div class="hero-metrics-strip" id="metricsStrip">
+          <div class="metric-card">
+            <div class="metric-num" data-target="93.5" data-suffix="%">93,5%</div>
+            <div class="metric-title">Accuracy Vision</div>
+            <div class="metric-desc">EfficientNetV2-S (24 classes patrimoine) sur MrcLens</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num" data-target="55" data-suffix="h">55h</div>
+            <div class="metric-title">Agent IA Solo</div>
+            <div class="metric-desc">Projet Kenza conçu en 55h de hackathon (Fastify/Redis)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num" data-target="56" data-suffix=" Tests">56 Tests</div>
+            <div class="metric-title">Tests JUnit 5</div>
+            <div class="metric-desc">Suite automatisée unitaires, intégration et e2e chez Incuboster</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num" data-target="177" data-suffix=" Dossiers">177</div>
+            <div class="metric-title">Dossiers de Diabète</div>
+            <div class="metric-desc">Données CHU (période d'un mois) modélisées en BI &amp; R</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION PROFIL (« Ce qui me définit »)
+         ======================================================== -->
+    <section id="profil" class="reveal">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Profil &amp; Vision
+          </p>
+          <h2>Ingénierie logicielle &amp; Intelligence appliquée</h2>
+          <p class="sub">Construire des systèmes complets : du code backend maintenable aux modèles intelligents en
+            production.</p>
+        </div>
+
+        <div class="profil-grid">
+          <div class="profil-text">
+            <p>
+              Actuellement étudiante en <strong>Master IS2IA</strong> (Ingénierie des Systèmes d’Information et
+              Intelligence Artificielle) à l’<strong>ESISA</strong> après une <strong>Licence en Ingénierie
+                Logicielle</strong>, je recherche activement une <strong>opportunité d'alternance</strong> afin de
+              mettre mes compétences au service de projets concrets et stimulants.
+            </p>
+            <p>
+              Mon travail s'articule autour de la conception d'applications web et mobiles robustes (FastAPI, Fastify,
+              Node.js, Next.js, React Native, Java/JavaFX) et de leur articulation avec des briques d'intelligence
+              artificielle : <strong>systèmes RAG, agents autonomes multi-outils, traitement du langage naturel, vision
+                par ordinateur et algorithmique fondamentale (C++)</strong>.
+            </p>
+            <p>
+              Chaque projet est conduit avec une exigence de modularité, de sécurité et d'impact réel pour l'utilisateur
+              final — qu'il s'agisse d'un praticien hospitalier en endocrinologie ou d'un marchand marocain gérant son
+              inventaire.
+            </p>
+
+            <div class="qualities-grid">
+              <h4>Qualités &amp; Aptitudes d'ingénieure</h4>
+              <div class="tag-row">
+                <span class="tag">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  Leadership &amp; Prise d'initiative
+                </span>
+                <span class="tag">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  Travail en équipe
+                </span>
+                <span class="tag">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  Esprit d'analyse &amp; Pensée critique
+                </span>
+                <span class="tag">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  Adaptabilité technologique
+                </span>
+                <span class="tag">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  Résolution méthodique de problèmes
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="highlight-cards">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <div class="highlight-body">
+                <h3>Double Culture Tech &amp; IA</h3>
+                <p>Maîtrise des architectures en couches (MVC, Clean Architecture), des bases relationnelles
+                  (PostgreSQL, SQLite) et NoSQL (MongoDB, Redis), et des flux temps réel (WebSockets, BullMQ).</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                </svg>
+              </div>
+              <div class="highlight-body">
+                <h3>IA Appliquée &amp; Systèmes RAG</h3>
+                <p>Déploiement concret d'agents autonomes, de pipelines RAG multilingues (LangChain, ChromaDB, GPT-4o)
+                  et d'inférence de vision par ordinateur (EfficientNet, ONNX Runtime).</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div class="highlight-body">
+                <h3>Leadership &amp; Art Oratoire</h3>
+                <p>Présidente du Club de Débat ESISA, membre de jury officiel et 2ᵉ place en hackathon senior. Capacité
+                  reconnue à structurer la pensée, argumenter et défendre des choix d'ingénierie.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION PROJETS (Filtrables, Structurés & Avec Hachage C++)
+         ======================================================== -->
+    <section id="projets" style="background-color: var(--surface-alt);" class="reveal">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2" />
+              <polyline points="2 17 12 22 22 17" />
+              <polyline points="2 12 12 17 22 12" />
+            </svg>
+            Réalisations &amp; Cas d'Étude
+          </p>
+          <h2>Systèmes conçus &amp; Déployés</h2>
+          <p class="sub">Plateformes Full-Stack, intelligence artificielle, vision, décisionnel et structures de données.</p>
+        </div>
+
+        <!-- 1. Barre de filtres en pilules avec compteurs dynamiques -->
+        <div class="projects-filter-bar" role="tablist" aria-label="Filtrer les projets">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="btnFilterAll">Tous les projets (7)</button>
+          <button class="filter-btn" data-filter="ia" role="tab" aria-selected="false">IA &amp; ML (2)</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack &amp; Logiciel (5)</button>
+          <button class="filter-btn" data-filter="data" role="tab" aria-selected="false">Data &amp; BI (1)</button>
+          <button class="filter-btn" data-filter="algo" role="tab" aria-selected="false">Algorithmique (1)</button>
+        </div>
+
+        <!-- 2. Grille Bento des Projets -->
+        <div class="projects-bento-grid" id="projectsGrid">
+
+          <!-- ========================================================
+               PROJET 1 (Bento Flagship - Pleine Largeur) : MRCLENS
+               ======================================================== -->
+          <article class="project-card bento-flagship" data-category="ia fullstack" id="proj-mrclens">
+            <div class="proj-card-header">
+              <div class="proj-meta-row">
+                <div class="proj-badges-group">
+                  <span class="proj-role-badge team">Projet d'équipe (PFA) · Contribution majeure</span>
+                  <span class="proj-cat-badge">IA &amp; Vision · Mobile &amp; Cloud</span>
+                </div>
+                <span class="proj-period">Mars 2026 — Août 2026</span>
+              </div>
+              <h3 class="proj-title">MrcLens — Plateforme Touristique &amp; Culturelle Intelligente</h3>
+            </div>
+
+            <p class="proj-pitch">
+              Écosystème web et mobile d'immersion culturelle dédié au patrimoine marocain, couplant reconnaissance visuelle haute précision (93,5%), pipeline RAG multilingue et billetterie à QR codes dynamiques.
+            </p>
+
+            <!-- Visuel Signature MrcLens : Pipeline Vision -> RAG -> API -> Mobile -->
+            <div class="sig-visual-wrapper" aria-label="Pipeline d'inférence MrcLens">
+              <div class="pipeline-flow-grid">
+                <div class="flow-node">
+                  <span class="flow-node-num">01 · MOBILE</span>
+                  <span class="flow-node-title">Expo / React Native</span>
+                  <span class="flow-node-sub">Capture &amp; Geofencing</span>
+                </div>
+                <div class="flow-node">
+                  <span class="flow-node-num">02 · VISION</span>
+                  <span class="flow-node-title">EfficientNetV2-S</span>
+                  <span class="flow-metric-badge">93,5% Accuracy · ONNX</span>
+                </div>
+                <div class="flow-node">
+                  <span class="flow-node-num">03 · RAG</span>
+                  <span class="flow-node-title">ChromaDB + GPT-4o</span>
+                  <span class="flow-node-sub">Assistant Multilingue</span>
+                </div>
+                <div class="flow-node">
+                  <span class="flow-node-num">04 · SERVICES</span>
+                  <span class="flow-node-title">FastAPI &amp; Cloud</span>
+                  <span class="flow-node-sub">QR Dynamiques · Vercel</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bouton d'exploration avec animation de hauteur fluide -->
+            <button class="proj-expand-btn" aria-expanded="false" aria-controls="details-mrclens" onclick="toggleProjectDrawer(this)">
+              <span>Explorer le projet</span>
+              <svg class="expand-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+
+            <!-- Tiroir de détails structuré en 3 blocs fixes + stepper interactif -->
+            <div class="proj-drawer-wrapper" id="details-mrclens">
+              <div class="proj-drawer-inner">
+                <div class="proj-fixed-blocks">
+                  <div class="fixed-block challenge">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      Problématique
+                    </div>
+                    <p>
+                      Valoriser et faciliter la découverte autonome des monuments et artisanats du patrimoine marocain pour les visiteurs internationaux, tout en garantissant une reconnaissance instantanée à faible latence et des réponses culturelles vérifiées sans hallucination.
+                    </p>
+                  </div>
+
+                  <div class="fixed-block solution">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      Approche Technique
+                    </div>
+                    <ul>
+                      <li>Entraînement et validation d'un modèle <strong>EfficientNetV2-S sur 24 classes</strong> patrimoniales (93,5% d'accuracy sur 370 images, F1-macro 0,93), optimisé en <strong>ONNX Runtime</strong>.</li>
+                      <li>Pipeline <strong>RAG multilingue</strong> intégrant ChromaDB, LangChain et GPT-4o avec contexte architectural marocain certifié.</li>
+                      <li>Architecture distribuée hybride MERN &amp; Python déployée sur Vercel et Render.</li>
+                    </ul>
+                  </div>
+
+                  <div class="fixed-block technologies">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+                      Technologies Clés
+                    </div>
+                    <div class="tag-row">
+                      <span class="tag dark">React Native (Expo)</span>
+                      <span class="tag dark">FastAPI</span>
+                      <span class="tag dark">EfficientNetV2-S</span>
+                      <span class="tag dark">ONNX Runtime</span>
+                      <span class="tag dark">ChromaDB</span>
+                      <span class="tag dark">LangChain</span>
+                      <span class="tag dark">GPT-4o</span>
+                      <span class="tag dark">Node.js / Express</span>
+                      <span class="tag dark">MongoDB Atlas</span>
+                      <span class="tag dark">Redis</span>
+                      <span class="tag dark">Socket.IO</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Distinction claire de ma contribution personnelle -->
+                <div class="personal-contribution-box">
+                  <div class="personal-contrib-title">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Ma Contribution Personnelle Majeure au Projet
+                  </div>
+                  <ul>
+                    <li>Participation à la conception complète de la plateforme et des flux de données hybrides (MERN / Python).</li>
+                    <li>Modélisation des diagrammes d'architecture UML et contribution active au <strong>pipeline RAG</strong> multilingue.</li>
+                    <li>Implémentation de la <strong>billetterie à QR codes dynamiques horodatés</strong> et calcul de <strong>Geofencing</strong> pour la géolocalisation.</li>
+                    <li>Supervision et automatisation des déploiements cloud sur <strong>Vercel et Render</strong>.</li>
+                  </ul>
+                </div>
+
+                <!-- Stepper interactif 4 étapes -->
+                <div class="proj-stepper" data-current-step="0" data-total-steps="4">
+                  <div class="stepper-progress-wrap">
+                    <div class="stepper-track">
+                      <div class="stepper-bar" style="width: 0%;"></div>
+                    </div>
+                    <div class="stepper-pills" role="tablist" aria-label="Étapes de conception MrcLens">
+                      <button class="step-pill active" onclick="goToStep(this, 0)" role="tab" aria-selected="true"><span class="step-num">STEP 01</span> Mobile</button>
+                      <button class="step-pill" onclick="goToStep(this, 1)" role="tab" aria-selected="false"><span class="step-num">STEP 02</span> Vision 93.5%</button>
+                      <button class="step-pill" onclick="goToStep(this, 2)" role="tab" aria-selected="false"><span class="step-num">STEP 03</span> RAG Culturel</button>
+                      <button class="step-pill" onclick="goToStep(this, 3)" role="tab" aria-selected="false"><span class="step-num">STEP 04</span> Services &amp; Cloud</button>
+                    </div>
+                  </div>
+
+                  <div class="stepper-content-viewport">
+                    <div class="step-slide active" data-step="0">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 01 · Expérience Mobile &amp; Capture</span>
+                        <div class="step-mini-tags"><span class="mini-tag">React Native</span><span class="mini-tag">Expo</span><span class="mini-tag">GPS</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Capture &amp; Expérience Utilisateur Touristique</h4>
+                      <p class="step-slide-desc">Application mobile fluide conçue sous React Native et Expo pour la prise de vue des monuments et pièces artisanales avec repérage instantané des sites patrimoniaux.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Interface de prise de vue assistée et prévisualisation haute fidélité.</li>
+                        <li>Détection de proximité par calcul de Geofencing GPS pour guider le touriste.</li>
+                        <li>Gestion de la billetterie mobile avec génération de QR codes uniques dynamiques.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="1">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 02 · Modèle Vision Haute Précision</span>
+                        <div class="step-mini-tags"><span class="mini-tag">EfficientNetV2-S</span><span class="mini-tag">ONNX Runtime</span><span class="mini-tag">24 Classes</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Reconnaissance Visuelle Validée à 93,5%</h4>
+                      <p class="step-slide-desc">Entraînement supervisé d'EfficientNetV2-S sur un corpus ciblé de 24 classes représentatives de l'architecture et de l'artisanat marocains.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Validation rigoureuse atteignant 93,5% d'accuracy sur 370 images de test (F1-macro : 0,93).</li>
+                        <li>Conversion et optimisation sous ONNX Runtime pour diviser le temps d'inférence par 3.</li>
+                        <li>Pipeline de prétraitement normalisé assurant la résilience aux variations de lumière.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="2">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 03 · Pipeline RAG Multilingue</span>
+                        <div class="step-mini-tags"><span class="mini-tag">ChromaDB</span><span class="mini-tag">LangChain</span><span class="mini-tag">GPT-4o</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Assistant Culturel Contextualisé sans Hallucination</h4>
+                      <p class="step-slide-desc">Architecture de génération augmentée par récupération indexant l'histoire et les détails architecturaux dans une base vectorielle dédiée.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Vectorisation sémantique et stockage vectoriel performant sous ChromaDB.</li>
+                        <li>Orchestration LangChain pour injecter le contexte historique pertinent dans GPT-4o.</li>
+                        <li>Prise en charge multilingue complète garantissant des réponses vérifiées aux visiteurs.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="3">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 04 · Architecture Backend &amp; Déploiement</span>
+                        <div class="step-mini-tags"><span class="mini-tag">FastAPI</span><span class="mini-tag">Socket.IO</span><span class="mini-tag">Vercel</span><span class="mini-tag">Render</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Microservices Robustes &amp; Déploiement Continu</h4>
+                      <p class="step-slide-desc">Couplage d'un backend asynchrone FastAPI pour l'inférence et d'un serveur d'événements Socket.IO pour les interactions en temps réel.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Vérification dynamique des billets anti-fraude avec révocation temps réel.</li>
+                        <li>Cache Redis pour optimiser la réponse sur les requêtes fréquentes de monuments.</li>
+                        <li>Déploiements automatisés et pipelines CI/CD sur Vercel et Render.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="stepper-controls">
+                    <button class="stepper-btn prev" onclick="navigateStep(this, -1)" disabled aria-label="Étape précédente">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                      <span>Précédent</span>
+                    </button>
+                    <div class="stepper-counter"><span class="current-step-display">1</span> / <span class="total-step-display">4</span></div>
+                    <button class="stepper-btn next" onclick="navigateStep(this, 1)" aria-label="Étape suivante">
+                      <span>Suivant</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tag-row">
+                <span class="tag dark">Architecture Hybride MERN/Python</span>
+                <span class="tag dark">Vercel &amp; Render</span>
+                <span class="tag dark">Socket.IO</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-code-request" onclick="prepareContactProject('MrcLens')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Code disponible sur demande</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               PROJET 2 : KENZA (AGENT COMMERCIAL IA & HACKATHON 55H)
+               ======================================================== -->
+          <article class="project-card" data-category="ia fullstack" id="proj-kenza">
+            <div class="proj-card-header">
+              <div class="proj-meta-row">
+                <div class="proj-badges-group">
+                  <span class="proj-role-badge solo">Projet solo · Hackathon 55h</span>
+                  <span class="proj-cat-badge">IA Agentique &amp; E-commerce</span>
+                </div>
+                <span class="proj-period">Septembre 2026</span>
+              </div>
+              <h3 class="proj-title">Kenza — Agent Commercial IA &amp; E-commerce</h3>
+            </div>
+
+            <p class="proj-pitch">
+              Agent autonome conçu en 55 heures (Hackathon ESISA × Numeos Technology, entretien avec les fondateurs). Comprend le langage naturel en Français, Arabe et Darija avec gestion des stocks temps réel.
+            </p>
+
+            <!-- Visuel Signature Kenza : Boucle ReAct -->
+            <div class="sig-visual-wrapper" aria-label="Cycle ReAct Kenza">
+              <div class="react-loop-container">
+                <div class="react-node">
+                  <div class="react-node-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                  </div>
+                  <strong style="font-size:0.75rem; font-family:'IBM Plex Mono',monospace;">REASON</strong>
+                  <span style="font-size:0.68rem; color:var(--muted);">NLP Darija/FR/AR</span>
+                </div>
+                <span class="react-arrow">➔</span>
+                <div class="react-node">
+                  <div class="react-node-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                  </div>
+                  <strong style="font-size:0.75rem; font-family:'IBM Plex Mono',monospace;">ACT</strong>
+                  <span style="font-size:0.68rem; color:var(--muted);">Fastify &amp; BullMQ</span>
+                </div>
+                <span class="react-arrow">➔</span>
+                <div class="react-node">
+                  <div class="react-node-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                  </div>
+                  <strong style="font-size:0.75rem; font-family:'IBM Plex Mono',monospace;">OBSERVE</strong>
+                  <span style="font-size:0.68rem; color:var(--muted);">PostgreSQL &amp; Stocks</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="proj-expand-btn" aria-expanded="false" aria-controls="details-kenza" onclick="toggleProjectDrawer(this)">
+              <span>Explorer le projet</span>
+              <svg class="expand-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+
+            <div class="proj-drawer-wrapper" id="details-kenza">
+              <div class="proj-drawer-inner">
+                <div class="proj-fixed-blocks">
+                  <div class="fixed-block challenge">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      Problématique
+                    </div>
+                    <p>
+                      Développé en solo en 55 heures lors du Hackathon ESISA × Numeos Technology (projet ayant conduit à un entretien avec les organisateurs). L'enjeu : concevoir un agent commercial autonome capable d'interagir naturellement en Darija, Arabe et Français avec gestion des stocks en direct.
+                    </p>
+                  </div>
+
+                  <div class="fixed-block solution">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      Approche Technique
+                    </div>
+                    <ul>
+                      <li>Boucle agentique ReAct (Reasoning &amp; Acting) pour la recherche de produits et la gestion du panier.</li>
+                      <li>Architecture asynchrone non-bloquante articulant Fastify, Redis et BullMQ pour les flux de messages.</li>
+                      <li>Modélisation transactionnelle sur PostgreSQL et dashboard marchand temps réel en Next.js.</li>
+                    </ul>
+                  </div>
+
+                  <div class="fixed-block technologies">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+                      Technologies Clés
+                    </div>
+                    <div class="tag-row">
+                      <span class="tag">Next.js</span>
+                      <span class="tag">Fastify</span>
+                      <span class="tag">PostgreSQL</span>
+                      <span class="tag">Redis</span>
+                      <span class="tag">BullMQ</span>
+                      <span class="tag">NLP Multilingue</span>
+                      <span class="tag">Boucle ReAct</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Stepper interactif 3 étapes -->
+                <div class="proj-stepper" data-current-step="0" data-total-steps="3">
+                  <div class="stepper-progress-wrap">
+                    <div class="stepper-track"><div class="stepper-bar" style="width: 0%;"></div></div>
+                    <div class="stepper-pills" role="tablist" aria-label="Étapes de conception Kenza">
+                      <button class="step-pill active" onclick="goToStep(this, 0)" role="tab" aria-selected="true"><span class="step-num">STEP 01</span> NLP &amp; ReAct</button>
+                      <button class="step-pill" onclick="goToStep(this, 1)" role="tab" aria-selected="false"><span class="step-num">STEP 02</span> Files BullMQ</button>
+                      <button class="step-pill" onclick="goToStep(this, 2)" role="tab" aria-selected="false"><span class="step-num">STEP 03</span> Cohérence &amp; UI</button>
+                    </div>
+                  </div>
+
+                  <div class="stepper-content-viewport">
+                    <div class="step-slide active" data-step="0">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 01 · Compréhension Multilingue</span>
+                        <div class="step-mini-tags"><span class="mini-tag">Darija</span><span class="mini-tag">Français</span><span class="mini-tag">Arabe</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Raisonnement Agentique &amp; Intentions d'Achat</h4>
+                      <p class="step-slide-desc">Traitement des requêtes orales et textuelles formulées en Darija marocaine, arabe standard ou français avec extraction d'entités métier.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Classification sémantique des requêtes et analyse de sentiment de l'acheteur.</li>
+                        <li>Boucle Reason-Act-Observe pour sélectionner les bons outils (catalogue, promotion, panier).</li>
+                        <li>Recommandations personnalisées tenant compte des préférences utilisateur.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="1">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 02 · Traitement Asynchrone Événementiel</span>
+                        <div class="step-mini-tags"><span class="mini-tag">Fastify</span><span class="mini-tag">Redis</span><span class="mini-tag">BullMQ</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Pipeline de Tâches Distribuées sans Blocage</h4>
+                      <p class="step-slide-desc">Gestion des pics de trafic conversationnel grâce à des files de messages persistantes en mémoire Redis.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Délégation asynchrone des calculs lourds aux workers BullMQ.</li>
+                        <li>Fastify configuré avec validation JSON Schema pour des débits élevés.</li>
+                        <li>Tolérance aux pannes et reprise automatique des messages en file.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="2">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 03 · Intégrité des Stocks &amp; Dashboard</span>
+                        <div class="step-mini-tags"><span class="mini-tag">Next.js</span><span class="mini-tag">PostgreSQL</span><span class="mini-tag">ACID</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Synchronisation des Commandes &amp; Dashboard</h4>
+                      <p class="step-slide-desc">Persistance transactionnelle garantissant le verrouillage strict des stocks lors des validations de commandes.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Schéma relationnel PostgreSQL normalisé avec contraintes d'intégrité.</li>
+                        <li>Tableau de bord commerçant développé sous Next.js pour le suivi des paniers.</li>
+                        <li>Métrique de conversion et historisation des dialogues pour audit.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="stepper-controls">
+                    <button class="stepper-btn prev" onclick="navigateStep(this, -1)" disabled aria-label="Étape précédente">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                      <span>Précédent</span>
+                    </button>
+                    <div class="stepper-counter"><span class="current-step-display">1</span> / <span class="total-step-display">3</span></div>
+                    <button class="stepper-btn next" onclick="navigateStep(this, 1)" aria-label="Étape suivante">
+                      <span>Suivant</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tag-row">
+                <span class="tag">Hackathon Solo 55h</span>
+                <span class="tag">Invité Entretien Numeos</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-code-request" onclick="prepareContactProject('Kenza')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Code disponible sur demande</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               PROJET 3 : INCUBOOSTER (APPLICATION DESKTOP & 56 TESTS)
+               ======================================================== -->
+          <article class="project-card" data-category="fullstack" id="proj-incubooster">
+            <div class="proj-card-header">
+              <div class="proj-meta-row">
+                <div class="proj-badges-group">
+                  <span class="proj-role-badge industrial">Projet solo · Industriel</span>
+                  <span class="proj-cat-badge">Génie Logiciel &amp; Finance</span>
+                </div>
+                <span class="proj-period">Juil 2026 – Oct 2026</span>
+              </div>
+              <h3 class="proj-title">INCUBOOSTER — Pilotage Financier &amp; Coûts de Revient</h3>
+            </div>
+
+            <p class="proj-pitch">
+              Progiciel desktop autonome pour PME assurant le calcul rigoureux des coûts de revient, la gestion des matières premières et le reporting analytique avec une suite de 56 tests automatisés JUnit 5.
+            </p>
+
+            <!-- Visuel Signature INCUBOOSTER : Badge 56 Tests JUnit 5 & Barre de progression -->
+            <div class="sig-visual-wrapper" aria-label="Suite de tests JUnit 5 INCUBOOSTER">
+              <div class="junit-badge-wrap">
+                <div class="junit-header-stat">
+                  <span>✔ SUITE DE TESTS JUNIT 5</span>
+                  <span>56 / 56 VALIDÉS (100%)</span>
+                </div>
+                <div class="junit-bar-track">
+                  <div class="junit-bar-fill"></div>
+                </div>
+                <div class="junit-legend-row">
+                  <span>28 Unitaires</span>
+                  <span>18 Intégration (JPA)</span>
+                  <span>10 End-to-End</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="proj-expand-btn" aria-expanded="false" aria-controls="details-incubooster" onclick="toggleProjectDrawer(this)">
+              <span>Explorer le projet</span>
+              <svg class="expand-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+
+            <div class="proj-drawer-wrapper" id="details-incubooster">
+              <div class="proj-drawer-inner">
+                <div class="proj-fixed-blocks">
+                  <div class="fixed-block challenge">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      Problématique
+                    </div>
+                    <p>
+                      Fournir aux gestionnaires de PME un progiciel desktop fiable, fonctionnant en totale autonomie locale sans dépendance réseau, capable de calculer avec précision les coûts de revient industriels, les marges et de gérer les alertes d'inventaire.
+                    </p>
+                  </div>
+
+                  <div class="fixed-block solution">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      Approche Technique
+                    </div>
+                    <ul>
+                      <li>Architecture en couches (UI JavaFX, Services métier, DAL Hibernate/JPA avec SQLite embarqué).</li>
+                      <li>Module d'export automatisé en PDF (iText), tableurs Excel (Apache POI) et CSV avec sauvegarde/restauration.</li>
+                      <li>Validation méthodique par <strong>56 tests automatisés sous JUnit 5</strong> couvrant les scénarios critiques.</li>
+                    </ul>
+                  </div>
+
+                  <div class="fixed-block technologies">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+                      Technologies Clés
+                    </div>
+                    <div class="tag-row">
+                      <span class="tag">Java 17</span>
+                      <span class="tag">JavaFX</span>
+                      <span class="tag">Hibernate / JPA</span>
+                      <span class="tag">SQLite</span>
+                      <span class="tag">JUnit 5 (56 tests)</span>
+                      <span class="tag">iText PDF</span>
+                      <span class="tag">Apache POI</span>
+                      <span class="tag">Maven</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Stepper interactif 3 étapes -->
+                <div class="proj-stepper" data-current-step="0" data-total-steps="3">
+                  <div class="stepper-progress-wrap">
+                    <div class="stepper-track"><div class="stepper-bar" style="width: 0%;"></div></div>
+                    <div class="stepper-pills" role="tablist" aria-label="Étapes de conception INCUBOOSTER">
+                      <button class="step-pill active" onclick="goToStep(this, 0)" role="tab" aria-selected="true"><span class="step-num">STEP 01</span> Architecture MVC</button>
+                      <button class="step-pill" onclick="goToStep(this, 1)" role="tab" aria-selected="false"><span class="step-num">STEP 02</span> Moteur de Calcul</button>
+                      <button class="step-pill" onclick="goToStep(this, 2)" role="tab" aria-selected="false"><span class="step-num">STEP 03</span> 56 Tests JUnit 5</button>
+                    </div>
+                  </div>
+
+                  <div class="stepper-content-viewport">
+                    <div class="step-slide active" data-step="0">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 01 · Découplage &amp; Persistance</span>
+                        <div class="step-mini-tags"><span class="mini-tag">JavaFX</span><span class="mini-tag">Hibernate</span><span class="mini-tag">SQLite</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Architecture en Couches &amp; DAL Robuste</h4>
+                      <p class="step-slide-desc">Séparation nette entre présentation JavaFX, logique métier de gestion financière et couche d'accès aux données locale.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Mapping objet-relationnel Hibernate/JPA avec validation par annotations.</li>
+                        <li>Base embarquée SQLite locale avec transactions ACID fiables.</li>
+                        <li>Système de sauvegarde et restauration automatisé de la base de données.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="1">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 02 · Algorithmes Financiers &amp; Exports</span>
+                        <div class="step-mini-tags"><span class="mini-tag">iText</span><span class="mini-tag">Apache POI</span><span class="mini-tag">KPIs</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Calcul des Coûts &amp; Génération de Bilans</h4>
+                      <p class="step-slide-desc">Moteur financier consolidant les charges directes et indirectes pour déterminer les marges nettes par produit.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Tableau de bord financier avec indicateurs clés et alertes de seuil de stock.</li>
+                        <li>Génération de rapports PDF officiels et de tableurs Excel prêts à l'impression.</li>
+                        <li>Exports de données structurés en CSV pour l'interopérabilité comptable.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="2">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 03 · Assurance Qualité Méthodique</span>
+                        <div class="step-mini-tags"><span class="mini-tag">56 Tests</span><span class="mini-tag">JUnit 5</span><span class="mini-tag">Regression</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Suite de 56 Tests Automatisés Sous JUnit 5</h4>
+                      <p class="step-slide-desc">Couverture complète des règles de calcul, de la validation des formulaires et de la résilience aux pannes.</p>
+                      <ul class="step-slide-bullets">
+                        <li>28 tests unitaires validant les formules de calcul des coûts et marges.</li>
+                        <li>18 tests d'intégration vérifiant les opérations CRUD et la persistance JPA.</li>
+                        <li>10 tests end-to-end validant la génération documentaire et les flux d'export.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="stepper-controls">
+                    <button class="stepper-btn prev" onclick="navigateStep(this, -1)" disabled aria-label="Étape précédente">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                      <span>Précédent</span>
+                    </button>
+                    <div class="stepper-counter"><span class="current-step-display">1</span> / <span class="total-step-display">3</span></div>
+                    <button class="stepper-btn next" onclick="navigateStep(this, 1)" aria-label="Étape suivante">
+                      <span>Suivant</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tag-row">
+                <span class="tag">56 Tests JUnit 5</span>
+                <span class="tag">Exports iText &amp; POI</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-code-request" onclick="prepareContactProject('INCUBOOSTER')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Code disponible sur demande</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               PROJET 4 : HACHAGE C++ (MINI-DÉMO INTERACTIVE VIVANTE)
+               ======================================================== -->
+          <article class="project-card" data-category="algo" id="proj-hachage">
+            <div class="proj-card-header">
+              <div class="proj-meta-row">
+                <div class="proj-badges-group">
+                  <span class="proj-role-badge academic">Projet académique · ESISA</span>
+                  <span class="proj-cat-badge">Algorithmique &amp; Structures</span>
+                </div>
+                <span class="proj-period">ESISA</span>
+              </div>
+              <h3 class="proj-title">Techniques de Hachage &amp; Résolution de Collisions en C++</h3>
+            </div>
+
+            <p class="proj-pitch">
+              Conception et benchmarking de fonctions de hachage et stratégies de résolution des collisions en C++ (chaînage séparé et adressage ouvert) pour optimiser le stockage et la recherche en O(1).
+            </p>
+
+            <!-- Visuel Signature Hachage C++ : Mini-démo interactive -->
+            <div class="sig-visual-wrapper" aria-label="Démonstrateur interactif de table de hachage">
+              <div class="hash-demo-container">
+                <div class="hash-input-row">
+                  <input type="text" class="hash-key-input" id="hashKeyInput" placeholder="Saisir une clé (ex: ESISA, FastAPI)..." aria-label="Clé à insérer dans la table de hachage" />
+                  <button class="btn-hash-run" onclick="insertHashDemoKey()">Hacher &amp; Insérer</button>
+                </div>
+                <div class="hash-presets-row">
+                  <span style="font-size:0.7rem; font-family:'IBM Plex Mono',monospace; color:var(--muted);">Suggestions :</span>
+                  <button class="hash-preset-btn" onclick="insertPresetKey('ESISA')">ESISA</button>
+                  <button class="hash-preset-btn" onclick="insertPresetKey('FastAPI')">FastAPI</button>
+                  <button class="hash-preset-btn" onclick="insertPresetKey('Maryem')">Maryem</button>
+                  <button class="hash-preset-btn" onclick="insertPresetKey('Algorithm')">Algorithm</button>
+                  <button class="hash-preset-btn" onclick="insertPresetKey('C++')">C++</button>
+                </div>
+                <div class="hash-feedback-msg" id="hashFeedbackMsg">Tapez une clé ou cliquez sur une suggestion pour observer le bucket et la gestion des collisions.</div>
+                <div class="hash-table-grid" id="hashTableGrid">
+                  <!-- 8 Buckets générés interactivement -->
+                  <div class="hash-bucket-cell" data-bucket="0"><span class="bucket-idx">[Bucket 0]</span><span class="bucket-chain" id="bchain-0">vide</span></div>
+                  <div class="hash-bucket-cell" data-bucket="1"><span class="bucket-idx">[Bucket 1]</span><span class="bucket-chain" id="bchain-1">vide</span></div>
+                  <div class="hash-bucket-cell" data-bucket="2"><span class="bucket-idx">[Bucket 2]</span><span class="bucket-chain" id="bchain-2">vide</span></div>
+                  <div class="hash-bucket-cell" data-bucket="3"><span class="bucket-idx">[Bucket 3]</span><span class="bucket-chain" id="bchain-3">vide</span></div>
+                  <div class="hash-bucket-cell" data-bucket="4"><span class="bucket-idx">[Bucket 4]</span><span class="bucket-chain" id="bchain-4">vide</span></div>
+                  <div class="hash-bucket-cell" data-bucket="5"><span class="bucket-idx">[Bucket 5]</span><span class="bucket-chain" id="bchain-5">vide</span></div>
+                  <div class="hash-bucket-cell" data-bucket="6"><span class="bucket-idx">[Bucket 6]</span><span class="bucket-chain" id="bchain-6">vide</span></div>
+                  <div class="hash-bucket-cell" data-bucket="7"><span class="bucket-idx">[Bucket 7]</span><span class="bucket-chain" id="bchain-7">vide</span></div>
+                </div>
+              </div>
+            </div>
+
+            <button class="proj-expand-btn" aria-expanded="false" aria-controls="details-hachage" onclick="toggleProjectDrawer(this)">
+              <span>Explorer le projet</span>
+              <svg class="expand-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+
+            <div class="proj-drawer-wrapper" id="details-hachage">
+              <div class="proj-drawer-inner">
+                <div class="proj-fixed-blocks">
+                  <div class="fixed-block challenge">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      Problématique
+                    </div>
+                    <p>
+                      Optimiser le stockage et la recherche en mémoire en explorant les fonctions de hachage, la dispersion des clés et la résolution des collisions. Projet conduit à l'ESISA sous l'encadrement de M. O. Mekouar et M. Genoun.
+                    </p>
+                  </div>
+
+                  <div class="fixed-block solution">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      Approche Technique
+                    </div>
+                    <ul>
+                      <li>Implémentation en C++ de fonctions de hachage par division et polynomiales.</li>
+                      <li>Gestion des collisions par chaînage séparé (listes chaînées dynamiques) et adressage ouvert (sondage linéaire).</li>
+                      <li>Comparaison empirique de l'efficacité en temps O(1) moyen vs dégradation au pire cas O(n).</li>
+                    </ul>
+                  </div>
+
+                  <div class="fixed-block technologies">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+                      Technologies Clés
+                    </div>
+                    <div class="tag-row">
+                      <span class="tag">C++</span>
+                      <span class="tag">Hash Functions</span>
+                      <span class="tag">Collision Strategies</span>
+                      <span class="tag">Chained Lists</span>
+                      <span class="tag">Linear Probing</span>
+                      <span class="tag">Time Complexity O(1)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Stepper interactif 3 étapes -->
+                <div class="proj-stepper" data-current-step="0" data-total-steps="3">
+                  <div class="stepper-progress-wrap">
+                    <div class="stepper-track"><div class="stepper-bar" style="width: 0%;"></div></div>
+                    <div class="stepper-pills" role="tablist" aria-label="Étapes de conception Hachage C++">
+                      <button class="step-pill active" onclick="goToStep(this, 0)" role="tab" aria-selected="true"><span class="step-num">STEP 01</span> Fonctions Math</button>
+                      <button class="step-pill" onclick="goToStep(this, 1)" role="tab" aria-selected="false"><span class="step-num">STEP 02</span> Résolution Collisions</button>
+                      <button class="step-pill" onclick="goToStep(this, 2)" role="tab" aria-selected="false"><span class="step-num">STEP 03</span> Analyse O(1)</button>
+                    </div>
+                  </div>
+
+                  <div class="stepper-content-viewport">
+                    <div class="step-slide active" data-step="0">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 01 · Modélisation des Fonctions</span>
+                        <div class="step-mini-tags"><span class="mini-tag">Modulo</span><span class="mini-tag">Polynômes</span><span class="mini-tag">C++</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Transformation des Clés en Indices de Table</h4>
+                      <p class="step-slide-desc">Développement d'algorithmes mathématiques de hachage convertissant les chaînes de caractères en empreintes uniformément réparties.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Hachage par division et méthode polynomiale avec coefficient premier.</li>
+                        <li>Minimisation du phénomène de regroupement primaire (clustering).</li>
+                        <li>Gestion sûre des débordements d'entiers non signés en C++.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="1">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 02 · Politiques de Résolution</span>
+                        <div class="step-mini-tags"><span class="mini-tag">Chaînage</span><span class="mini-tag">Sondage Linéaire</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Chaînage Séparé &amp; Adressage Ouvert</h4>
+                      <p class="step-slide-desc">Comparaison rigoureuse de deux paradigmes de gestion de collisions sous différentes charges.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Chaînage séparé par pointeurs de listes dynamiques pour supporter les fortes densités.</li>
+                        <li>Sondage linéaire en adressage ouvert pour maximiser la localité de cache mémoire.</li>
+                        <li>Stratégies de suppression sans rupture de chaîne de recherche.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="2">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 03 · Benchmark &amp; Complexité</span>
+                        <div class="step-mini-tags"><span class="mini-tag">O(1)</span><span class="mini-tag">Facteur de Charge</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Analyse Temporelle Insertion, Recherche &amp; Suppression</h4>
+                      <p class="step-slide-desc">Mesure de la complexité temporelle effective en fonction de l'augmentation du facteur de charge lambda.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Vérification du temps moyen d'accès constant O(1) avec facteur de charge maîtrisé.</li>
+                        <li>Étude des dégradations au pire cas vers O(n) et mécanismes de réallocation dynamique.</li>
+                        <li>Rapport technique complet remis dans le cadre du cursus d'ingénierie ESISA.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="stepper-controls">
+                    <button class="stepper-btn prev" onclick="navigateStep(this, -1)" disabled aria-label="Étape précédente">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                      <span>Précédent</span>
+                    </button>
+                    <div class="stepper-counter"><span class="current-step-display">1</span> / <span class="total-step-display">3</span></div>
+                    <button class="stepper-btn next" onclick="navigateStep(this, 1)" aria-label="Étape suivante">
+                      <span>Suivant</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tag-row">
+                <span class="tag">Algorithmique Fondamentale</span>
+                <span class="tag">Encadrement ESISA</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-code-request" onclick="prepareContactProject('Hachage-CPP')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Code disponible sur demande</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               PROJET 5 : TRUSTVAULT (ARCHITECTURE BANCAIRE FASTAPI)
+               ======================================================== -->
+          <article class="project-card" data-category="fullstack" id="proj-trustvault">
+            <div class="proj-card-header">
+              <div class="proj-meta-row">
+                <div class="proj-badges-group">
+                  <span class="proj-role-badge solo">Projet solo · Sécurité</span>
+                  <span class="proj-cat-badge">Backend &amp; Intégrité ACID</span>
+                </div>
+                <span class="proj-period">Nov 2025 — Jan 2026</span>
+              </div>
+              <h3 class="proj-title">TrustVault — Application Bancaire Sécurisée</h3>
+            </div>
+
+            <p class="proj-pitch">
+              Plateforme bancaire simulant des transactions financières réelles (dépôts, retraits, virements) avec intégrité transactionnelle stricte ACID, authentification JWT et validation des schémas Pydantic.
+            </p>
+
+            <!-- Visuel Signature TrustVault : Schéma de flux sécurisé -->
+            <div class="sig-visual-wrapper" aria-label="Flux de sécurité TrustVault">
+              <div class="trustvault-flow">
+                <div class="tv-step-node">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <span>Requête Client</span>
+                </div>
+                <span class="react-arrow">➔</span>
+                <div class="tv-step-node secure">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  <span>JWT &amp; Bcrypt</span>
+                </div>
+                <span class="react-arrow">➔</span>
+                <div class="tv-step-node secure">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Pydantic v2</span>
+                </div>
+                <span class="react-arrow">➔</span>
+                <div class="tv-step-node secure">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                  <span>PostgreSQL ACID</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="proj-expand-btn" aria-expanded="false" aria-controls="details-trustvault" onclick="toggleProjectDrawer(this)">
+              <span>Explorer le projet</span>
+              <svg class="expand-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+
+            <div class="proj-drawer-wrapper" id="details-trustvault">
+              <div class="proj-drawer-inner">
+                <div class="proj-fixed-blocks">
+                  <div class="fixed-block challenge">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      Problématique
+                    </div>
+                    <p>
+                      Concevoir un système bancaire d'intégrité critique éliminant tout risque d'incohérence de solde lors des transactions concurrentes (conditions de course, double dépense) avec une approche Zero-Trust.
+                    </p>
+                  </div>
+
+                  <div class="fixed-block solution">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      Approche Technique
+                    </div>
+                    <ul>
+                      <li>Architecture multicouche FastAPI : séparation stricte entre contrôleurs, services métier et accès aux données.</li>
+                      <li>Transactions atomiques sous PostgreSQL (BEGIN / COMMIT / ROLLBACK) assurant l'intégrité financière.</li>
+                      <li>Validation des schémas Pydantic, authentification JWT et hashage Bcrypt des mots de passe.</li>
+                    </ul>
+                  </div>
+
+                  <div class="fixed-block technologies">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+                      Technologies Clés
+                    </div>
+                    <div class="tag-row">
+                      <span class="tag">Python</span>
+                      <span class="tag">FastAPI</span>
+                      <span class="tag">PostgreSQL</span>
+                      <span class="tag">Pydantic v2</span>
+                      <span class="tag">JWT Tokens</span>
+                      <span class="tag">Bcrypt</span>
+                      <span class="tag">Transactions ACID</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Stepper interactif 3 étapes -->
+                <div class="proj-stepper" data-current-step="0" data-total-steps="3">
+                  <div class="stepper-progress-wrap">
+                    <div class="stepper-track"><div class="stepper-bar" style="width: 0%;"></div></div>
+                    <div class="stepper-pills" role="tablist" aria-label="Étapes de conception TrustVault">
+                      <button class="step-pill active" onclick="goToStep(this, 0)" role="tab" aria-selected="true"><span class="step-num">STEP 01</span> Multicouche</button>
+                      <button class="step-pill" onclick="goToStep(this, 1)" role="tab" aria-selected="false"><span class="step-num">STEP 02</span> Transactions ACID</button>
+                      <button class="step-pill" onclick="goToStep(this, 2)" role="tab" aria-selected="false"><span class="step-num">STEP 03</span> Sécurité Zero-Trust</button>
+                    </div>
+                  </div>
+
+                  <div class="stepper-content-viewport">
+                    <div class="step-slide active" data-step="0">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 01 · Architecture en Couches FastAPI</span>
+                        <div class="step-mini-tags"><span class="mini-tag">Clean Arch</span><span class="mini-tag">Routers</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Découplage Fonctionnel &amp; Injection de Dépendances</h4>
+                      <p class="step-slide-desc">Organisation claire des responsabilités pour garantir l'évolutivité et la testabilité unitaire des services bancaires.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Couche Routers isolant la réception et la sérialisation HTTP des requêtes.</li>
+                        <li>Couche Services appliquant les règles d'éligibilité financière et plafonds.</li>
+                        <li>Gestion de cycle de vie des sessions de base de données via `Depends()`.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="1">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 02 · Intégrité Transactionnelle</span>
+                        <div class="step-mini-tags"><span class="mini-tag">PostgreSQL</span><span class="mini-tag">ACID</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Verrouillage Atomique des Virements Inter-comptes</h4>
+                      <p class="step-slide-desc">Traitement unitaire des débits et crédits pour éliminer toute situation d'incohérence financière en cas de coupure.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Encapsulation des opérations bancaires dans des transactions atomiques PostgreSQL.</li>
+                        <li>Politique de rollback immédiat à la moindre exception levée lors d'un transfert.</li>
+                        <li>Historique immuable de chaque mouvement pour audit comptable.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="2">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 03 · Sécurité &amp; Validation</span>
+                        <div class="step-mini-tags"><span class="mini-tag">JWT</span><span class="mini-tag">Bcrypt</span><span class="mini-tag">Pydantic</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Authentification Sécurisée &amp; Validation Pydantic</h4>
+                      <p class="step-slide-desc">Contrôle strict des identités et des données entrantes pour prévenir toute injection ou usurpation.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Génération de jetons JWT sécurisés et salage de mots de passe sous Bcrypt.</li>
+                        <li>Validation rigoureuse des montants et formats via des schémas Pydantic typés.</li>
+                        <li>Gestion fine des codes d'erreur HTTP pour ne divulguer aucune information sensible.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="stepper-controls">
+                    <button class="stepper-btn prev" onclick="navigateStep(this, -1)" disabled aria-label="Étape précédente">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                      <span>Précédent</span>
+                    </button>
+                    <div class="stepper-counter"><span class="current-step-display">1</span> / <span class="total-step-display">3</span></div>
+                    <button class="stepper-btn next" onclick="navigateStep(this, 1)" aria-label="Étape suivante">
+                      <span>Suivant</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tag-row">
+                <span class="tag">Zero Trust Principles</span>
+                <span class="tag">Transactions Atomiques</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-code-request" onclick="prepareContactProject('TrustVault')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Code disponible sur demande</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               PROJET 6 : ANALYSE BI DIABÈTE (177 DOSSIERS CHU & K-MEANS)
+               ======================================================== -->
+          <article class="project-card" data-category="data" id="proj-bi-diabete">
+            <div class="proj-card-header">
+              <div class="proj-meta-row">
+                <div class="proj-badges-group">
+                  <span class="proj-role-badge solo">Mission décisionnelle · Données CHU</span>
+                  <span class="proj-cat-badge">Data Analytics &amp; R</span>
+                </div>
+                <span class="proj-period">Avril 2026 — Juin 2026</span>
+              </div>
+              <h3 class="proj-title">Analyse BI &amp; Statistiques — 177 Dossiers Diabète CHU</h3>
+            </div>
+
+            <p class="proj-pitch">
+              Exploitation analytique de 177 dossiers de patients diabétiques mis à disposition par le CHU sur 1 mois : modélisation DAX, 3 dashboards Power BI et segmentation K-means sous R (FactoMineR).
+            </p>
+
+            <!-- Visuel Signature Analyse BI : Compteur 177 dossiers & Nuage K-means -->
+            <div class="sig-visual-wrapper" aria-label="Visualisation décisionnelle K-means">
+              <div class="bi-visual-layout">
+                <div class="bi-stat-header">
+                  <span>DONNÉES CLINIQUES CHU (1 MOIS)</span>
+                  <span class="bi-stat-count">177 DOSSIERS MODÉLISÉS</span>
+                </div>
+                <!-- Mini nuage de points K-means SVG -->
+                <svg viewBox="0 0 320 100" style="width:100%; height:90px;" aria-hidden="true">
+                  <!-- Fond repère -->
+                  <line x1="20" y1="85" x2="300" y2="85" stroke="var(--line)" stroke-width="1"/>
+                  <line x1="20" y1="15" x2="20" y2="85" stroke="var(--line)" stroke-width="1"/>
+                  <!-- Cluster 1 (Lavande / Suivi standard) -->
+                  <g class="cluster-grp c1-points">
+                    <circle cx="50" cy="70" r="3.5" fill="#A855F7" opacity="0.85"/>
+                    <circle cx="65" cy="62" r="3" fill="#A855F7" opacity="0.85"/>
+                    <circle cx="80" cy="75" r="4" fill="#A855F7" opacity="0.85"/>
+                    <circle cx="95" cy="58" r="3.5" fill="#A855F7" opacity="0.85"/>
+                    <circle cx="110" cy="68" r="4.5" fill="#A855F7" opacity="0.85"/>
+                    <circle cx="75" cy="50" r="3.5" fill="#A855F7" opacity="0.85"/>
+                    <!-- Centroïde 1 -->
+                    <circle cx="79" cy="64" r="7" fill="none" stroke="#7E22CE" stroke-width="1.8"/>
+                    <circle cx="79" cy="64" r="2.5" fill="#7E22CE"/>
+                  </g>
+                  <!-- Cluster 2 (Or / Complications vasculaires) -->
+                  <g class="cluster-grp c2-points">
+                    <circle cx="150" cy="40" r="3.5" fill="var(--gold)" opacity="0.9"/>
+                    <circle cx="165" cy="48" r="4" fill="var(--gold)" opacity="0.9"/>
+                    <circle cx="180" cy="35" r="3.5" fill="var(--gold)" opacity="0.9"/>
+                    <circle cx="195" cy="45" r="3" fill="var(--gold)" opacity="0.9"/>
+                    <circle cx="170" cy="28" r="4.5" fill="var(--gold)" opacity="0.9"/>
+                    <circle cx="185" cy="52" r="3.5" fill="var(--gold)" opacity="0.9"/>
+                    <!-- Centroïde 2 -->
+                    <circle cx="174" cy="41" r="7" fill="none" stroke="var(--gold-accessible)" stroke-width="1.8"/>
+                    <circle cx="174" cy="41" r="2.5" fill="var(--gold-accessible)"/>
+                  </g>
+                  <!-- Cluster 3 (Prune / Risque aigu) -->
+                  <g class="cluster-grp c3-points">
+                    <circle cx="230" cy="25" r="4" fill="#EC4899" opacity="0.85"/>
+                    <circle cx="245" cy="18" r="3.5" fill="#EC4899" opacity="0.85"/>
+                    <circle cx="260" cy="28" r="4.5" fill="#EC4899" opacity="0.85"/>
+                    <circle cx="275" cy="22" r="3" fill="#EC4899" opacity="0.85"/>
+                    <circle cx="250" cy="38" r="3.5" fill="#EC4899" opacity="0.85"/>
+                    <!-- Centroïde 3 -->
+                    <circle cx="252" cy="26" r="7" fill="none" stroke="#BE185D" stroke-width="1.8"/>
+                    <circle cx="252" cy="26" r="2.5" fill="#BE185D"/>
+                  </g>
+                </svg>
+                <div class="kmeans-clusters-row">
+                  <span class="cluster-pill-toggle c1">● Cluster 1 : Profil Standard (74)</span>
+                  <span class="cluster-pill-toggle c2">● Cluster 2 : Complications (61)</span>
+                  <span class="cluster-pill-toggle c3">● Cluster 3 : Risque Aigu (42)</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="proj-expand-btn" aria-expanded="false" aria-controls="details-bi" onclick="toggleProjectDrawer(this)">
+              <span>Explorer le projet</span>
+              <svg class="expand-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+
+            <div class="proj-drawer-wrapper" id="details-bi">
+              <div class="proj-drawer-inner">
+                <div class="proj-fixed-blocks">
+                  <div class="fixed-block challenge">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      Problématique
+                    </div>
+                    <p>
+                      Nettoyer, structurer et synthétiser 177 dossiers cliniques de patients diabétiques fournis par le CHU sur une période d'un mois, afin d'extraire des indicateurs de suivi et des corrélations sans intervenir sur le volet médical direct.
+                    </p>
+                  </div>
+
+                  <div class="fixed-block solution">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      Approche Technique
+                    </div>
+                    <ul>
+                      <li>Nettoyage ETL sous Power Query et calcul d'indicateurs personnalisés en DAX.</li>
+                      <li>Conception de 3 tableaux de bord Power BI : répartition démographique, corrélations de pathologies et indicateurs de suivi.</li>
+                      <li>Analyses statistiques multivariées sous R (FactoMineR) : AFC, K-means et classification ascendante hiérarchique (CHA).</li>
+                    </ul>
+                  </div>
+
+                  <div class="fixed-block technologies">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+                      Technologies Clés
+                    </div>
+                    <div class="tag-row">
+                      <span class="tag">Power BI</span>
+                      <span class="tag">DAX</span>
+                      <span class="tag">Power Query</span>
+                      <span class="tag">R / FactoMineR</span>
+                      <span class="tag">K-means &amp; AFC</span>
+                      <span class="tag">Classification CHA</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Stepper interactif 3 étapes -->
+                <div class="proj-stepper" data-current-step="0" data-total-steps="3">
+                  <div class="stepper-progress-wrap">
+                    <div class="stepper-track"><div class="stepper-bar" style="width: 0%;"></div></div>
+                    <div class="stepper-pills" role="tablist" aria-label="Étapes de conception Analyse BI">
+                      <button class="step-pill active" onclick="goToStep(this, 0)" role="tab" aria-selected="true"><span class="step-num">STEP 01</span> ETL &amp; Qualité</button>
+                      <button class="step-pill" onclick="goToStep(this, 1)" role="tab" aria-selected="false"><span class="step-num">STEP 02</span> Modélisation DAX</button>
+                      <button class="step-pill" onclick="goToStep(this, 2)" role="tab" aria-selected="false"><span class="step-num">STEP 03</span> R FactoMineR</button>
+                    </div>
+                  </div>
+
+                  <div class="stepper-content-viewport">
+                    <div class="step-slide active" data-step="0">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 01 · Traitement des Données Brutes</span>
+                        <div class="step-mini-tags"><span class="mini-tag">177 Dossiers</span><span class="mini-tag">Power Query</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Nettoyage &amp; Normalisation Clinique CHU</h4>
+                      <p class="step-slide-desc">Ingénierie des données cliniques couvrant 177 patients sur une fenêtre d'un mois de consultations hospitalières.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Imputation raisonnée des valeurs manquantes et élimination des doublons.</li>
+                        <li>Standardisation des variables médicales (HbA1c, glycémie à jeun, antécédents).</li>
+                        <li>Structuration d'un schéma en étoile adapté aux analyses multidimensionnelles.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="1">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 02 · Tableaux de Bord Décisionnels</span>
+                        <div class="step-mini-tags"><span class="mini-tag">DAX</span><span class="mini-tag">Power BI</span><span class="mini-tag">3 Dashboards</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Mesures DAX &amp; Restitution Visuelle Interactive</h4>
+                      <p class="step-slide-desc">Création de visualisations interactives permettant aux observateurs de filtrer par tranche d'âge et complication.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Formules DAX calculant les médianes et écarts de distribution des glycémies.</li>
+                        <li>Dashboard 1 : Démographie &amp; Répartition par sexe et âge.</li>
+                        <li>Dashboard 2 &amp; 3 : Corrélations de complications cardiovasculaires et suivi.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="2">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 03 · Exploration Multivariée sous R</span>
+                        <div class="step-mini-tags"><span class="mini-tag">FactoMineR</span><span class="mini-tag">K-means</span><span class="mini-tag">AFC</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Segmentation des Patients &amp; Analyse Factorielle</h4>
+                      <p class="step-slide-desc">Identification de groupes homogènes de patients pour dégager des profils types sans diagnostic médical direct.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Analyse Factorielle des Correspondances (AFC) pour croiser profils et pathologies.</li>
+                        <li>Algorithme K-means stabilisé par Classification Ascendante Hiérarchique (CHA).</li>
+                        <li>Visualisation des centroïdes et identification de 3 clusters distincts de patients.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="stepper-controls">
+                    <button class="stepper-btn prev" onclick="navigateStep(this, -1)" disabled aria-label="Étape précédente">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                      <span>Précédent</span>
+                    </button>
+                    <div class="stepper-counter"><span class="current-step-display">1</span> / <span class="total-step-display">3</span></div>
+                    <button class="stepper-btn next" onclick="navigateStep(this, 1)" aria-label="Étape suivante">
+                      <span>Suivant</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tag-row">
+                <span class="tag">177 Dossiers (1 Mois)</span>
+                <span class="tag">Données CHU</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-code-request" onclick="prepareContactProject('BI-Diabete')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Code disponible sur demande</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               PROJET 7 : RENDEZY (PRISE DE RDV EN LIGNE & LEAFLET)
+               ======================================================== -->
+          <article class="project-card" data-category="fullstack" id="proj-rendezy">
+            <div class="proj-card-header">
+              <div class="proj-meta-row">
+                <div class="proj-badges-group">
+                  <span class="proj-role-badge solo">Projet solo · Plateforme Web</span>
+                  <span class="proj-cat-badge">Full-Stack MVC &amp; Cartes</span>
+                </div>
+                <span class="proj-period">Déc 2025 — Jan 2026</span>
+              </div>
+              <h3 class="proj-title">Rendezy — Réservation &amp; Prise de RDV Multi-services</h3>
+            </div>
+
+            <p class="proj-pitch">
+              Plateforme de réservation et prise de rendez-vous en ligne multi-secteurs (praticiens, services) avec gestion des disponibilités en direct, synchronisation d'agendas et repérage spatial interactif via Leaflet.js.
+            </p>
+
+            <!-- Visuel Signature Rendezy : Sélecteur de créneaux interactif & Pin Leaflet -->
+            <div class="sig-visual-wrapper" aria-label="Widget de réservation interactif Rendezy">
+              <div class="rendezy-visual-box">
+                <div style="display:flex; justify-content:space-between; align-items:center; font-family:'IBM Plex Mono',monospace; font-size:0.75rem;">
+                  <span>CHOISIR UN CRÉNEAU :</span>
+                  <span id="rendezySlotFeedback" style="color:var(--gold-accessible); font-weight:600;">10:30 sélectionné</span>
+                </div>
+                <div class="rendezy-slots-row">
+                  <button class="slot-btn" onclick="selectRendezySlot(this, '09:00')">09:00</button>
+                  <button class="slot-btn selected" onclick="selectRendezySlot(this, '10:30')">10:30</button>
+                  <button class="slot-btn" onclick="selectRendezySlot(this, '14:00')">14:00</button>
+                  <button class="slot-btn" onclick="selectRendezySlot(this, '16:30')">16:30</button>
+                </div>
+                <div class="rendezy-map-pin-row">
+                  <span class="map-radar-dot"></span>
+                  <span>Cabinet / Praticien géolocalisé sur carte Leaflet active</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="proj-expand-btn" aria-expanded="false" aria-controls="details-rendezy" onclick="toggleProjectDrawer(this)">
+              <span>Explorer le projet</span>
+              <svg class="expand-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+
+            <div class="proj-drawer-wrapper" id="details-rendezy">
+              <div class="proj-drawer-inner">
+                <div class="proj-fixed-blocks">
+                  <div class="fixed-block challenge">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      Problématique
+                    </div>
+                    <p>
+                      Fluidifier la prise de rendez-vous en ligne multi-secteurs (santé, juridique, bien-être) en éliminant les conflits d'agendas et en permettant aux clients de localiser rapidement les professionnels proches.
+                    </p>
+                  </div>
+
+                  <div class="fixed-block solution">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      Approche Technique
+                    </div>
+                    <ul>
+                      <li>API REST en Node.js et Express architecturée selon le modèle MVC avec base MongoDB &amp; Mongoose.</li>
+                      <li>Sécurisation des accès utilisateurs et praticiens par tokens JWT et hashage Bcrypt.</li>
+                      <li>Intégration cartographique Leaflet.js pour la recherche géographique et gestion dynamique des créneaux.</li>
+                    </ul>
+                  </div>
+
+                  <div class="fixed-block technologies">
+                    <div class="fixed-block-title">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+                      Technologies Clés
+                    </div>
+                    <div class="tag-row">
+                      <span class="tag">Node.js</span>
+                      <span class="tag">Express.js</span>
+                      <span class="tag">MongoDB</span>
+                      <span class="tag">Mongoose ODM</span>
+                      <span class="tag">Leaflet.js</span>
+                      <span class="tag">JWT Tokens</span>
+                      <span class="tag">Bcrypt</span>
+                      <span class="tag">Architecture MVC</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Stepper interactif 3 étapes -->
+                <div class="proj-stepper" data-current-step="0" data-total-steps="3">
+                  <div class="stepper-progress-wrap">
+                    <div class="stepper-track"><div class="stepper-bar" style="width: 0%;"></div></div>
+                    <div class="stepper-pills" role="tablist" aria-label="Étapes de conception Rendezy">
+                      <button class="step-pill active" onclick="goToStep(this, 0)" role="tab" aria-selected="true"><span class="step-num">STEP 01</span> API &amp; Modèles</button>
+                      <button class="step-pill" onclick="goToStep(this, 1)" role="tab" aria-selected="false"><span class="step-num">STEP 02</span> Moteur Agendas</button>
+                      <button class="step-pill" onclick="goToStep(this, 2)" role="tab" aria-selected="false"><span class="step-num">STEP 03</span> Cartes Leaflet</button>
+                    </div>
+                  </div>
+
+                  <div class="stepper-content-viewport">
+                    <div class="step-slide active" data-step="0">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 01 · Backend REST &amp; MVC</span>
+                        <div class="step-mini-tags"><span class="mini-tag">Node.js</span><span class="mini-tag">Express</span><span class="mini-tag">Mongoose</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Architecture Modèle-Vue-Contrôleur Structurée</h4>
+                      <p class="step-slide-desc">Conception d'une API RESTful modulaire avec gestion fine des profils praticiens et clients.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Schémas Mongoose typés pour les praticiens, disponibilités et réservations.</li>
+                        <li>Sécurisation des routes par middlewares d'authentification JWT et hashage Bcrypt.</li>
+                        <li>Gestion standardisée des statuts de réponse HTTP et gestion globale des erreurs.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="1">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 02 · Disponibilités en Temps Réel</span>
+                        <div class="step-mini-tags"><span class="mini-tag">Créneaux</span><span class="mini-tag">Validation</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Algorithme d'Allocation des Créneaux</h4>
+                      <p class="step-slide-desc">Vérification instantanée des chevauchements d'horaires et gestion des annulations.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Découpage automatisé des journées de travail en intervalles configurables.</li>
+                        <li>Verrouillage temporaire du créneau pendant la confirmation de réservation.</li>
+                        <li>Système de notifications et gestion des annulations sans conflit.</li>
+                      </ul>
+                    </div>
+
+                    <div class="step-slide" data-step="2">
+                      <div class="step-slide-header">
+                        <span class="step-tag-pill">Étape 03 · Repérage Géographique</span>
+                        <div class="step-mini-tags"><span class="mini-tag">Leaflet.js</span><span class="mini-tag">OpenStreetMap</span></div>
+                      </div>
+                      <h4 class="step-slide-title">Intégration Cartographique &amp; Recherche Spatiale</h4>
+                      <p class="step-slide-desc">Affichage interactif des professionnels de santé et prestataires sur carte Leaflet.</p>
+                      <ul class="step-slide-bullets">
+                        <li>Marqueurs personnalisés avec popups descriptifs de chaque cabinet.</li>
+                        <li>Centrage automatique sur la position géographique du visiteur.</li>
+                        <li>Filtres combinés par spécialité métier et rayon kilométrique.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="stepper-controls">
+                    <button class="stepper-btn prev" onclick="navigateStep(this, -1)" disabled aria-label="Étape précédente">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                      <span>Précédent</span>
+                    </button>
+                    <div class="stepper-counter"><span class="current-step-display">1</span> / <span class="total-step-display">3</span></div>
+                    <button class="stepper-btn next" onclick="navigateStep(this, 1)" aria-label="Étape suivante">
+                      <span>Suivant</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tag-row">
+                <span class="tag">Mongoose ODM</span>
+                <span class="tag">Architecture MVC</span>
+                <span class="tag">Leaflet Maps</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn-code-request" onclick="prepareContactProject('Rendezy')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Code disponible sur demande</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION EXPÉRIENCES (Timeline en entreprise)
+         ======================================================== -->
+    <section id="experience" class="reveal">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+            Parcours professionnel
+          </p>
+          <h2>Expériences en entreprise</h2>
+          <p class="sub">Missions d'ingénierie logicielle et de développement web en environnement professionnel.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- EXPÉRIENCE 1 : INCUBOOSTER -->
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <h3 class="tl-role">Stagiaire Développeuse Logiciel</h3>
+                  <div class="tl-org">INCUBOOSTER</div>
+                </div>
+                <span class="tl-date-badge">Juillet 2026 – Octobre 2026</span>
+              </div>
+
+              <div class="tl-subject">
+                <strong>Sujet principal :</strong> Conception et développement d’une application desktop Java/JavaFX de
+                gestion des coûts et de pilotage financier d'entreprise.
+              </div>
+
+              <ul class="tl-bullets">
+                <li>Conception complète de l'architecture logicielle en couches avec base de données
+                  <strong>SQLite</strong> locale intégrée.</li>
+                <li>Développement des modules de gestion : matières premières, fiches techniques de production,
+                  valorisation des stocks, calcul automatisé des coûts de revient, ventes et charges d'exploitation.
+                </li>
+                <li>Implémentation de la logique métier et d'un <strong>tableau de bord décisionnel</strong> avec calcul
+                  en direct du chiffre d'affaires, marge brute, résultat net, indicateurs clés (KPI) et alertes de
+                  stock.</li>
+                <li>Génération d'exports automatisés en formats <strong>PDF (iText), Excel (Apache POI) et CSV</strong>,
+                  avec module de sauvegarde et restauration de la base.</li>
+                <li>Garantie de qualité logicielle : <strong>56 tests automatisés sous JUnit 5</strong> (tests
+                  unitaires, tests d'intégration et scénarios end-to-end).</li>
+                <li>Conditionnement et déploiement sous Windows et résolution d'anomalies web.</li>
+              </ul>
+
+              <div class="tag-row">
+                <span class="tag">Java 17</span>
+                <span class="tag">JavaFX</span>
+                <span class="tag">Hibernate / JPA</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">JUnit 5 (56 tests)</span>
+                <span class="tag">Maven</span>
+                <span class="tag">iText</span>
+                <span class="tag">Apache POI</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPÉRIENCE 2 : ALTEK TECHNOLOGIES -->
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <h3 class="tl-role">Stagiaire Développeuse Web</h3>
+                  <div class="tl-org">ALTEK Technologies</div>
+                </div>
+                <span class="tl-date-badge">Juillet 2025 – Août 2025</span>
+              </div>
+
+              <div class="tl-subject">
+                <strong>Sujet principal :</strong> Conception et intégration front-end de la plateforme web d'actualités
+                « L'HEBDO ».
+              </div>
+
+              <ul class="tl-bullets">
+                <li>Développement de 5 interfaces web complètes (Accueil, Hebdos, Charte éditoriale, Contact, À propos)
+                  avec focus sur l'ergonomie et l'UX.</li>
+                <li>Mise en œuvre d'interfaces hautement responsives, manipulation dynamique du DOM en JavaScript et
+                  intégration de carrousels d'articles via <strong>Slick.js</strong>.</li>
+                <li>Assurance de la conformité cross-browser et collaboration sur les scripts backend en
+                  <strong>PHP</strong>.</li>
+              </ul>
+
+              <div class="tag-row">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Slick.js</span>
+                <span class="tag">PHP</span>
+                <span class="tag">UX Design</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION COMPÉTENCES TECHNIQUES (Organisée & Filtrable)
+         ======================================================== -->
+    <section id="competences" style="background-color: var(--surface-alt);" class="reveal">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Boîte à outils
+          </p>
+          <h2>Compétences techniques</h2>
+          <p class="sub">Technologies, langages et méthodologies appliqués dans mes projets académiques et industriels.
+          </p>
+        </div>
+
+        <div class="skills-controls">
+          <div class="search-wrapper">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input type="text" id="skillSearch" class="search-input"
+              placeholder="Rechercher une technologie (ex: Python, Docker, C++, RAG, React)..."
+              aria-label="Rechercher une compétence">
+          </div>
+          <span id="searchFeedback"
+            style="font-size:0.82rem; color:var(--muted); font-family:'IBM Plex Mono',monospace;"></span>
+        </div>
+
+        <!-- État vide quand aucune compétence n'est trouvée -->
+        <div id="skillEmptyState" class="empty-state">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            style="margin:0 auto 0.5rem; opacity:0.6;">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            <line x1="8" y1="11" x2="14" y2="11" />
+          </svg>
+          <div>Aucune compétence ne correspond à votre recherche. Essayez un autre mot-clé (ex: Python, Java, C++,
+            Docker, SQL).</div>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+
+          <!-- 1. Langages -->
+          <div class="skill-cat-card" data-cat="langages">
+            <div class="skill-cat-head">
+              <div class="skill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Langages de Programmation</h3>
+            </div>
+            <div class="tag-row skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">C++</span>
+              <span class="tag">C</span>
+              <span class="tag">C#</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">SQL</span>
+              <span class="tag">R</span>
+            </div>
+          </div>
+
+          <!-- 2. Web, Mobile & Backend -->
+          <div class="skill-cat-card" data-cat="web-backend">
+            <div class="skill-cat-head">
+              <div class="skill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Web, Mobile &amp; Backend</h3>
+            </div>
+            <div class="tag-row skill-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Expo</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">JavaFX</span>
+              <span class="tag">Hibernate / JPA</span>
+              <span class="tag">HTML5 &amp; CSS3</span>
+              <span class="tag">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- 3. Machine Learning & Computer Vision -->
+          <div class="skill-cat-card" data-cat="ml-cv">
+            <div class="skill-cat-head">
+              <div class="skill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Machine Learning &amp; Computer Vision</h3>
+            </div>
+            <div class="tag-row skill-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow / Keras</span>
+              <span class="tag">CNN</span>
+              <span class="tag">EfficientNetV2-S</span>
+              <span class="tag">Transfer Learning</span>
+              <span class="tag">ONNX Runtime</span>
+              <span class="tag">Machine Learning <small style="opacity:0.75">(en cours)</small></span>
+            </div>
+          </div>
+
+          <!-- 4. IA Générative & Agents -->
+          <div class="skill-cat-card" data-cat="genai">
+            <div class="skill-cat-head">
+              <div class="skill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">IA Générative &amp; Architectures Agents</h3>
+            </div>
+            <div class="tag-row skill-tags">
+              <span class="tag">RAG Pipeline</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">ChromaDB</span>
+              <span class="tag">Vector Embeddings</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">GPT-4o</span>
+              <span class="tag">GPT-4.1 &amp; GPT-5.5</span>
+            </div>
+          </div>
+
+          <!-- 5. Bases de données -->
+          <div class="skill-cat-card" data-cat="database">
+            <div class="skill-cat-head">
+              <div class="skill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Bases de Données &amp; Stockage</h3>
+            </div>
+            <div class="tag-row skill-tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">MongoDB Atlas</span>
+              <span class="tag">Redis</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Oracle <small style="opacity:0.75">(en cours)</small></span>
+            </div>
+          </div>
+
+          <!-- 6. Data & Business Intelligence -->
+          <div class="skill-cat-card" data-cat="bi">
+            <div class="skill-cat-head">
+              <div class="skill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="14" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Data &amp; Business Intelligence</h3>
+            </div>
+            <div class="tag-row skill-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">Power Query</span>
+              <span class="tag">DAX</span>
+              <span class="tag">ETL</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">R (FactoMineR)</span>
+              <span class="tag">ACP &amp; AFC</span>
+              <span class="tag">K-means &amp; CHA</span>
+            </div>
+          </div>
+
+          <!-- 7. Conception, Méthodes & Tests -->
+          <div class="skill-cat-card" data-cat="methods">
+            <div class="skill-cat-head">
+              <div class="skill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Conception, Méthodes &amp; Algorithmique</h3>
+            </div>
+            <div class="tag-row skill-tags">
+              <span class="tag">POO</span>
+              <span class="tag">Structures de Données</span>
+              <span class="tag">Techniques de Hachage</span>
+              <span class="tag">UML &amp; Merise</span>
+              <span class="tag">Architecture MVC</span>
+              <span class="tag">API REST</span>
+              <span class="tag">JUnit 5</span>
+              <span class="tag">Méthode Scrum</span>
+              <span class="tag">Kanban</span>
+              <span class="tag">Design Patterns &amp; SOLID <small style="opacity:0.75">(en cours)</small></span>
+            </div>
+          </div>
+
+          <!-- 8. DevOps & Sécurité -->
+          <div class="skill-cat-card" data-cat="devops">
+            <div class="skill-cat-head">
+              <div class="skill-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">DevOps, Outils &amp; Sécurité</h3>
+            </div>
+            <div class="tag-row skill-tags">
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Maven</span>
+              <span class="tag">Linux</span>
+              <span class="tag">JWT</span>
+              <span class="tag">OAuth2</span>
+              <span class="tag">bcrypt</span>
+              <span class="tag">CORS</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION FORMATION & CERTIFICATIONS (Dans la navigation)
+         ======================================================== -->
+    <section id="formation" class="reveal">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+            Cursus &amp; Validation
+          </p>
+          <h2>Formation &amp; Certifications</h2>
+          <p class="sub">Parcours universitaire en ingénierie logicielle et certifications officielles.</p>
+        </div>
+
+        <div class="formation-layout">
+          <!-- Colonne 1 : Diplômes universitaires -->
+          <div class="formation-column">
+            <h3 style="font-size:1.35rem; margin-bottom:0.4rem; color:var(--ink);">Parcours Académique</h3>
+
+            <div class="academic-card">
+              <div class="card-head-row">
+                <h4 class="degree-name">Master IS2IA</h4>
+                <span class="tl-date-badge">2026 — Présent</span>
+              </div>
+              <div class="degree-school">ESISA (École Supérieure d'Ingénierie en Sciences Appliquées) · Fès</div>
+              <p style="font-size:0.88rem; color:var(--muted); margin-top:0.45rem;">
+                Spécialisation en Ingénierie des Systèmes d’Information et Intelligence Artificielle : architectures
+                logicielles distribuées, modèles prédictifs, IA générative et RAG.
+              </p>
+            </div>
+
+            <div class="academic-card">
+              <div class="card-head-row">
+                <h4 class="degree-name">Licence en Ingénierie Logicielle</h4>
+                <span class="tl-date-badge">2023 — 2026</span>
+              </div>
+              <div class="degree-school">ESISA · Fès</div>
+              <p style="font-size:0.88rem; color:var(--muted); margin-top:0.45rem;">
+                Fondamentaux de l'informatique théorique, programmation orientée objet (Java, C++, C#), conception de
+                bases de données, architectures web et méthodes agiles.
+              </p>
+            </div>
+
+            <div class="academic-card">
+              <div class="card-head-row">
+                <h4 class="degree-name">Baccalauréat en Sciences Physiques</h4>
+                <span class="tl-date-badge">2023</span>
+              </div>
+              <div class="degree-school">Lycée Al Moustakbal</div>
+              <p style="font-size:0.88rem; color:var(--muted); margin-top:0.25rem;">
+                Formation scientifique rigoureuse en mathématiques et physique.
+              </p>
+            </div>
+          </div>
+
+          <!-- Colonne 2 : Certifications & Langues -->
+          <div class="formation-column">
+            <h3 style="font-size:1.35rem; margin-bottom:0.4rem; color:var(--ink);">Certifications Validées</h3>
+
+            <div class="certif-card">
+              <div class="certif-issuer">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                IBM
+              </div>
+              <h4 class="degree-name" style="font-size:1.05rem; margin-top:0.2rem;">Python for Data Science, AI &amp;
+                Development</h4>
+              <p style="font-size:0.82rem; color:var(--muted); margin-top:0.25rem;">Maîtrise de Python, Pandas, NumPy et
+                des API pour la science des données.</p>
+            </div>
+
+            <div class="certif-card">
+              <div class="certif-issuer">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Anthropic
+              </div>
+              <h4 class="degree-name" style="font-size:1.05rem; margin-top:0.2rem;">Building with the Claude API</h4>
+              <p style="font-size:0.82rem; color:var(--muted); margin-top:0.25rem;">Conception d'applications avec LLM,
+                prompt engineering et structuration de contextes.</p>
+            </div>
+
+            <div class="certif-card">
+              <div class="certif-issuer">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Anthropic
+              </div>
+              <h4 class="degree-name" style="font-size:1.05rem; margin-top:0.2rem;">Claude Code 101</h4>
+              <p style="font-size:0.82rem; color:var(--muted); margin-top:0.25rem;">Intégration d'outils d'assistance au
+                code et développement assisté par IA.</p>
+            </div>
+
+            <div class="certif-card">
+              <div class="certif-issuer" style="color:var(--violet-strong);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 14 14" />
+                </svg>
+                IBM · En cours de validation
+              </div>
+              <h4 class="degree-name" style="font-size:1.05rem; margin-top:0.2rem;">Full-Stack JavaScript Developer
+                Professional Certificate</h4>
+              <p style="font-size:0.82rem; color:var(--muted); margin-top:0.25rem;">Cycle avancé Node.js, Express,
+                React, Cloud Native et micro-services.</p>
+            </div>
+
+            <!-- Langues officielles -->
+            <div class="languages-card">
+              <h4 style="font-size:1.05rem; font-weight:700; color:var(--ink); margin-bottom:0.8rem;">Compétences
+                Linguistiques</h4>
+              <div class="lang-item">
+                <span class="lang-name">Arabe</span>
+                <span class="lang-level">Langue maternelle</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">Français</span>
+                <span class="lang-level">Niveau B2 · Préparation TCF</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">Anglais</span>
+                <span class="lang-level">Courant · Préparation TOEIC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION ENGAGEMENTS & ACTIVITÉS (« Au-delà du code »)
+         ======================================================== -->
+    <section id="engagements" style="background-color: var(--surface-alt);" class="reveal">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            Au-delà du code
+          </p>
+          <h2>Engagements, Débat &amp; Distinctions</h2>
+          <p class="sub">Le débat d'idées, le leadership associatif et l'esprit d'équipe nourrissent directement ma
+            rigueur d'ingénieure.</p>
+        </div>
+
+        <div class="engagements-grid">
+
+          <!-- 1. Présidente Club de Débat -->
+          <div class="engagement-card" style="border-top:3px solid var(--gold);">
+            <div>
+              <div class="engagement-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                Leadership
+              </div>
+              <h3>Présidente du Club de Débat ESISA</h3>
+              <div class="engagement-meta">2026 — Présent</div>
+              <p class="engagement-desc">Direction du club de débat de l'école : coordination des ateliers de
+                rhétorique, formation des membres à l'art oratoire et organisation de compétitions inter-universitaires.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Hackathon 2e place première phase -->
+          <div class="engagement-card" style="border-top:3px solid var(--gold);">
+            <div>
+              <div class="engagement-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+                Compétition Technique
+              </div>
+              <h3>2ᵉ place lors de la première phase — Hackathon ESISA Senior Developers</h3>
+              <div class="engagement-meta">Juillet 2025 · Première phase</div>
+              <p class="engagement-desc">Obtention de la 2ᵉ place lors de la première phase de sélection (quiz technique
+                et épreuve algorithmique parmi 45 équipes participantes), suivie de l'épreuve de live coding de 3 heures
+                en C++, Python et JavaScript.</p>
+            </div>
+          </div>
+
+          <!-- 3. Jury TEHD -->
+          <div class="engagement-card">
+            <div>
+              <div class="engagement-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                </svg>
+                Jury Officiel
+              </div>
+              <h3>Jury — The 2nd Elite High-School Debate (TEHD)</h3>
+              <div class="engagement-meta">29–30 novembre 2025 · ENCG Fès</div>
+              <p class="engagement-desc">Membre du jury officiel pour les débats en arabe : évaluation de la structure
+                argumentative, de la cohérence logique et de la répartie des équipes finalistes.</p>
+            </div>
+          </div>
+
+          <!-- 4. ESISA CREATORS -->
+          <div class="engagement-card">
+            <div>
+              <div class="engagement-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" />
+                </svg>
+                Innovation
+              </div>
+              <h3>ESISA CREATORS — Événement Entrepreneurial</h3>
+              <div class="engagement-meta">10 janvier 2026</div>
+              <p class="engagement-desc">Participation aux tables rondes et échanges avec des fondateurs et innovateurs
+                marocains sur l'entrepreneuriat technologique et la conduite de projets à forte valeur ajoutée.</p>
+            </div>
+          </div>
+
+          <!-- 5. Attestation de Mérite BDE -->
+          <div class="engagement-card">
+            <div>
+              <div class="engagement-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Reconnaissance
+              </div>
+              <h3>Attestation de Mérite — BDE ESISA</h3>
+              <div class="engagement-meta">Juin 2025</div>
+              <p class="engagement-desc">Distinction officielle décernée par le Bureau des Étudiants pour l'engagement
+                actif, le sens de l'organisation et l'animation de la vie étudiante de l'école.</p>
+            </div>
+          </div>
+
+          <!-- 6. Centres d'intérêt -->
+          <div class="engagement-card" style="background:var(--surface);">
+            <div>
+              <div class="engagement-badge" style="color:var(--violet-strong);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                Centres d'intérêt
+              </div>
+              <h3>Passions &amp; Équilibre</h3>
+              <div class="engagement-meta">Culture &amp; Sport</div>
+              <div class="tag-row" style="margin-top:0.4rem;">
+                <span class="tag">Débat &amp; Rhétorique</span>
+                <span class="tag">Dessin &amp; Design</span>
+                <span class="tag">Basketball</span>
+                <span class="tag">Innovation &amp; IA</span>
+                <span class="tag">Voyages &amp; Cultures</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION CONTACT (« Travaillons ensemble » — SANS QR CODE)
+         ======================================================== -->
+    <section id="contact" class="reveal">
+      <div class="wrap">
+        <div class="contact-container">
+          <div class="section-head" style="margin-bottom:1.5rem;">
+            <p class="eyebrow on-dark">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Contact Direct
+            </p>
+            <h2>Concevons ensemble des solutions performantes</h2>
+            <p class="sub">À la recherche d'une alternance en développement logiciel, Full-Stack ou intelligence
+              artificielle. Ouverte aux échanges et collaborations techniques.</p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Coordonnées directes et réseaux sociaux visibles -->
+            <div class="contact-direct">
+              <!-- Email avec bouton Copier -->
+              <div class="contact-card">
+                <div class="contact-info">
+                  <div class="contact-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-label">Email Professionnel</div>
+                    <a href="mailto:mabrouki.maryem37@gmail.com" class="contact-val">mabrouki.maryem37@gmail.com</a>
+                  </div>
+                </div>
+                <button class="btn-copy"
+                  onclick="copyText('mabrouki.maryem37@gmail.com', 'Email copié dans le presse-papier !')"
+                  aria-label="Copier l'email">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                  <span>Copier</span>
+                </button>
+              </div>
+
+              <!-- Téléphone avec bouton Copier -->
+              <div class="contact-card">
+                <div class="contact-info">
+                  <div class="contact-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-label">Téléphone Direct</div>
+                    <a href="tel:+212642683395" class="contact-val">+212 642 683 395</a>
+                  </div>
+                </div>
+                <button class="btn-copy" onclick="copyText('+212642683395', 'Numéro copié dans le presse-papier !')"
+                  aria-label="Copier le numéro">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                  <span>Copier</span>
+                </button>
+              </div>
+
+              <!-- WhatsApp & Profils GitHub / LinkedIn avec vrais logos SVG -->
+              <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                <a href="https://wa.me/212642683395" target="_blank" rel="noopener noreferrer" class="btn btn-gold"
+                  style="flex:1;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                  </svg>
+                  <span>Écrire sur WhatsApp</span>
+                </a>
+                <a href="https://linkedin.com/in/maryem-mabrouki-0058942a5" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-ghost-light" title="LinkedIn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/maryemmabrouki" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-ghost-light" title="GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+
+              <!-- Carte localisation & contact -->
+              <div
+                style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.14); border-radius:var(--radius); padding:1.2rem; font-size:0.86rem; color:var(--violet-soft); line-height:1.5;">
+                <strong style="color:#FFFFFF; display:block; margin-bottom:0.25rem;">Disponibilité Alternance</strong>
+                Basée à Fès (Maroc), ouverte aux formats d'alternance ou de collaboration technique avec les équipes de
+                développement logiciel et d'ingénierie IA.
+              </div>
+            </div>
+
+            <!-- Formulaire de contact accessible -->
+            <form class="contact-form" id="contactForm" onsubmit="return handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="cName">Votre nom et/ou entreprise *</label>
+                <input type="text" id="cName" class="form-input"
+                  placeholder="ex. Recruteur Tech / Responsable Ingénierie" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cEmail">Votre adresse email professionnelle *</label>
+                <input type="email" id="cEmail" class="form-input" placeholder="nom@entreprise.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cSubject">Sujet de l'échange *</label>
+                <input type="text" id="cSubject" class="form-input"
+                  value="Opportunité Alternance / Collaboration — Développement Logiciel &amp; IA" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cMsg">Votre message *</label>
+                <textarea id="cMsg" class="form-textarea"
+                  placeholder="Bonjour Maryem, nous avons découvert votre profil et vos projets en IA/Full-Stack et nous aimerions échanger concernant une alternance..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width:100%; padding:0.95rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+                <span>Envoyer le message direct</span>
+              </button>
+
+              <p style="font-size:0.76rem; color:var(--violet-soft); text-align:center; line-height:1.4;">
+                Ce formulaire prépare votre message direct adressé à <strong>mabrouki.maryem37@gmail.com</strong> via
+                votre client de messagerie.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-mark" style="width:32px; height:32px; font-size:0.85rem;" aria-hidden="true">MM</div>
+          <div>
+            <div style="font-weight:700; color:#FFFFFF;">Maryem Mabrouki</div>
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:0.72rem; color:var(--violet-soft);">
+              © 2026 — Fès, Maroc · À la recherche d'une alternance Full-Stack &amp; IA
+            </div>
+          </div>
+        </div>
+
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:#A494B6;">
+          Conçu en HTML5 sémantique, CSS3 moderne &amp; JavaScript pur
+        </div>
+
+        <button class="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          aria-label="Retourner en haut de page">
+          <span>Haut de page</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastBox" role="status" aria-live="polite">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+    <span id="toastMsg">Texte copié !</span>
+  </div>
+
+  <!-- ========================================================
+       JAVASCRIPT NATIF (Interactions, Animations & Logique)
+       ======================================================== -->
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
